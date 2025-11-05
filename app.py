@@ -73,6 +73,14 @@ NAV = [
         "emoji": "📊",
     },
     {
+        "name": "Possessions",
+        "endpoint": "/possessions/",
+        "module": "dashapps.possessions",
+        "factory": "create_dash_possessions",
+        "desc": "Exact possessions with offensive/defensive/net ratings by team.",
+        "emoji": "⏱️",
+    },
+    {
         "name": "Players",
         "endpoint": "/players/",
         "module": "dashapps.players",
