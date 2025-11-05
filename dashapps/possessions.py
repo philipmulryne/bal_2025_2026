@@ -1,11 +1,10 @@
 # dashapps/possessions.py
 from __future__ import annotations
 
-import json
 import os
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
@@ -28,6 +27,71 @@ def _data_root() -> Path:
     return Path(os.environ.get("DATA_ROOT", "out_data"))
 
 
+@lru_cache(maxsize=1)
+def _team_name_map() -> Dict[str, str]:
+    mapping_path = _data_root() / "_cumulative" / "team_name_map.csv"
+    if not mapping_path.exists():
+        return {}
+    try:
+        df = pd.read_csv(mapping_path)
+    except Exception:
+        return {}
+    mapping: Dict[str, str] = {}
+    for _, row in df.iterrows():
+        old = str(row.get("old_name") or "").strip()
+        new = str(row.get("canonical_name") or "").strip()
+        if old:
+            mapping[old] = new or old
+    return mapping
+
+
+def _canonical_team(name: Optional[str]) -> Optional[str]:
+    if name is None or (isinstance(name, float) and pd.isna(name)):
+        return None
+    cleaned = str(name).strip()
+    if not cleaned:
+        return None
+    return _team_name_map().get(cleaned, cleaned)
+
+
+@lru_cache(maxsize=1)
+def _load_games_index() -> pd.DataFrame:
+    index_path = _data_root() / "_cumulative" / "games_index.csv"
+    if not index_path.exists():
+        return pd.DataFrame()
+    try:
+        df = pd.read_csv(index_path)
+    except Exception:
+        return pd.DataFrame()
+
+    if df.empty:
+        return df
+
+    df = df.copy()
+    df["week"] = df["week"].astype(str)
+    df["game_id"] = df["game_id"].astype(str)
+    teams_split = df.get("teams").astype(str).str.split(" / ", n=1, expand=True)
+    if teams_split is not None and teams_split.shape[1] == 2:
+        df["team1_name"] = teams_split[0].apply(_canonical_team)
+        df["team2_name"] = teams_split[1].apply(_canonical_team)
+    else:
+        df["team1_name"] = None
+        df["team2_name"] = None
+
+    df["label"] = df.get("label").astype(str).fillna("")
+    return df[["week", "game_id", "label", "team1_name", "team2_name"]]
+
+
+def _split_label(label: Optional[str]) -> Tuple[Optional[str], Optional[str]]:
+    if not isinstance(label, str) or not label:
+        return None, None
+    for delimiter in (" vs ", " v ", " - "):
+        if delimiter in label:
+            parts = label.split(delimiter, 1)
+            return parts[0].strip(), parts[1].strip()
+    return label, None
+
+
 def _extract_week_number(label: Optional[str]) -> Optional[int]:
     if not label:
         return None
@@ -38,16 +102,6 @@ def _extract_week_number(label: Optional[str]) -> Optional[int]:
         return int(digits)
     except Exception:
         return None
-
-
-def _load_meta(game_dir: Path) -> Dict[str, Any]:
-    meta_path = game_dir / "meta.json"
-    if not meta_path.exists():
-        return {}
-    try:
-        return json.loads(meta_path.read_text(encoding="utf-8"))
-    except Exception:
-        return {}
 
 
 def _safe_rating(points: float, poss: int) -> Optional[float]:
@@ -106,106 +160,201 @@ def _clean_records(df: pd.DataFrame) -> List[Dict[str, Any]]:
 
 @lru_cache(maxsize=1)
 def _load_game_log() -> pd.DataFrame:
-    root = _data_root()
-    if not root.exists():
+    pbp_path = _data_root() / "_cumulative" / "pbp_all.csv"
+    if not pbp_path.exists():
         return pd.DataFrame()
 
-    rows: List[Dict[str, Any]] = []
+    try:
+        pbp = pd.read_csv(pbp_path)
+    except Exception:
+        return pd.DataFrame()
 
-    def _game_dirs(par: Path) -> Iterable[Path]:
-        try:
-            for child in sorted(par.iterdir()):
-                if child.is_dir() and not child.name.startswith("."):
-                    yield child
-        except Exception:
-            return []
+    if pbp.empty:
+        return pd.DataFrame()
 
-    for bucket in _game_dirs(root):
-        if bucket.name.startswith("_"):
-            continue
-        for game_dir in _game_dirs(bucket):
-            poss_path = game_dir / "game_possessions.csv"
-            if not poss_path.exists():
-                continue
-            meta = _load_meta(game_dir)
-            week_label = meta.get("week") or bucket.name
-            week_num = _extract_week_number(week_label)
-            game_id = str(meta.get("game_id") or game_dir.name)
-            game_label = meta.get("label") or ""
+    pbp = pbp.copy()
+    pbp["week"] = pbp.get("week").astype(str)
+    pbp["game_id"] = pbp.get("game_id").astype(str)
+    pbp["label"] = pbp.get("label").astype(str)
 
-            try:
-                poss_df = pd.read_csv(poss_path)
-            except Exception:
-                continue
+    pbp["possession_id"] = pd.to_numeric(pbp.get("possession_id"), errors="coerce")
+    pbp["possession_owner_tno"] = pd.to_numeric(pbp.get("possession_owner_tno"), errors="coerce")
+    pbp = pbp.dropna(subset=["possession_id", "possession_owner_tno"])
+    if pbp.empty:
+        return pd.DataFrame()
 
-            if poss_df is None or poss_df.empty or "owner_team_name" not in poss_df.columns:
-                continue
+    pbp["possession_id"] = pbp["possession_id"].astype(int)
+    pbp["possession_owner_tno"] = pbp["possession_owner_tno"].astype(int)
+    pbp = pbp[pbp["possession_owner_tno"].isin([1, 2])]
+    if pbp.empty:
+        return pd.DataFrame()
 
-            poss_df = poss_df.dropna(subset=["owner_team_name"]).copy()
-            if poss_df.empty:
-                continue
+    for col in ("pts_1", "pts_2"):
+        pbp[col] = pd.to_numeric(pbp.get(col), errors="coerce").fillna(0.0)
 
-            poss_df["owner_team_name"] = poss_df["owner_team_name"].astype(str)
-            poss_df["pts_owner"] = pd.to_numeric(poss_df.get("pts_owner"), errors="coerce").fillna(0.0)
+    group_cols = ["week", "game_id", "possession_id", "possession_owner_tno"]
+    possessions = (
+        pbp.groupby(group_cols, dropna=False)
+        .agg(
+            pts_1=("pts_1", "sum"),
+            pts_2=("pts_2", "sum"),
+        )
+        .reset_index()
+    )
 
-            grouped = poss_df.groupby("owner_team_name", dropna=False)
-            if grouped.ngroups < 2:
-                continue
+    if possessions.empty:
+        return pd.DataFrame()
 
-            summary: List[Dict[str, Any]] = []
-            for team_name, grp in grouped:
-                poss_for = int(grp.shape[0])
-                pts_for = float(grp["pts_owner"].sum())
-                summary.append(
-                    {
-                        "team_name": team_name,
-                        "poss_for": poss_for,
-                        "pts_for": pts_for,
-                    }
-                )
+    games_index = _load_games_index()
+    if games_index.empty:
+        games_index = (
+            pbp[["week", "game_id", "label"]]
+            .dropna(subset=["week", "game_id"])
+            .drop_duplicates(subset=["week", "game_id"], keep="first")
+        )
+        split_values = games_index["label"].apply(_split_label)
+        games_index["team1_name"] = [
+            _canonical_team(pair[0]) for pair in split_values
+        ]
+        games_index["team2_name"] = [
+            _canonical_team(pair[1]) for pair in split_values
+        ]
+    else:
+        if "label" not in games_index.columns:
+            games_index = games_index.copy()
+            games_index["label"] = ""
 
-            if len(summary) < 2:
-                continue
+        missing_mask = games_index["team1_name"].isna() | games_index["team2_name"].isna()
+        if missing_mask.any():
+            pbp_labels = (
+                pbp[["week", "game_id", "label"]]
+                .dropna(subset=["week", "game_id"])
+                .drop_duplicates(subset=["week", "game_id"], keep="first")
+            )
+            games_index = games_index.merge(
+                pbp_labels,
+                on=["week", "game_id"],
+                how="left",
+                suffixes=("", "_pbp"),
+            )
+            games_index["label"] = games_index["label"].where(
+                games_index["label"].astype(bool), games_index["label_pbp"]
+            )
+            games_index = games_index.drop(columns=[c for c in games_index.columns if c.endswith("_pbp")])
+            missing_mask = games_index["team1_name"].isna() | games_index["team2_name"].isna()
+            split_values = games_index.loc[missing_mask, "label"].apply(_split_label)
+            games_index.loc[missing_mask, "team1_name"] = [
+                _canonical_team(pair[0]) for pair in split_values
+            ]
+            games_index.loc[missing_mask, "team2_name"] = [
+                _canonical_team(pair[1]) for pair in split_values
+            ]
 
-            for entry in summary:
-                opp = next((o for o in summary if o["team_name"] != entry["team_name"]), None)
-                if opp is None:
-                    continue
-                poss_for = entry["poss_for"]
-                poss_against = opp["poss_for"]
-                pts_for = entry["pts_for"]
-                pts_against = opp["pts_for"]
-                ortg = _safe_rating(pts_for, poss_for)
-                drtg = _safe_rating(pts_against, poss_for)
-                net = _safe_net(ortg, drtg)
-                margin = int(round(pts_for - pts_against))
+    games_index["team1_name"] = games_index["team1_name"].apply(_canonical_team)
+    games_index["team2_name"] = games_index["team2_name"].apply(_canonical_team)
+    games_index = games_index.drop_duplicates(subset=["week", "game_id"], keep="first")
 
-                rows.append(
-                    {
-                        "week": week_label,
-                        "week_num": week_num,
-                        "week_display": None,
-                        "game_id": game_id,
-                        "game_label": game_label,
-                        "team_name": entry["team_name"],
-                        "opponent": opp["team_name"],
-                        "poss_for": poss_for,
-                        "poss_against": poss_against,
-                        "poss_diff": poss_for - poss_against,
-                        "pts_for": int(round(pts_for)),
-                        "pts_against": int(round(pts_against)),
-                        "ortg": ortg,
-                        "drtg": drtg,
-                        "net": net,
-                        "margin": margin,
-                        "result": _result_text(pts_for, pts_against, margin),
-                        "score_text": f"{int(round(pts_for))}-{int(round(pts_against))}",
-                    }
-                )
+    possessions = possessions.merge(
+        games_index,
+        on=["week", "game_id"],
+        how="left",
+    )
 
-    games = pd.DataFrame(rows)
-    if games.empty:
-        return games
+    if possessions[["team1_name", "team2_name"]].isna().all(axis=None):
+        return pd.DataFrame()
+
+    poss_records = possessions.copy()
+    poss_records["team_name"] = np.where(
+        poss_records["possession_owner_tno"] == 1,
+        poss_records["team1_name"],
+        poss_records["team2_name"],
+    )
+    poss_records["opponent"] = np.where(
+        poss_records["possession_owner_tno"] == 1,
+        poss_records["team2_name"],
+        poss_records["team1_name"],
+    )
+
+    poss_records["pts_for"] = np.where(
+        poss_records["possession_owner_tno"] == 1,
+        poss_records["pts_1"],
+        poss_records["pts_2"],
+    )
+    poss_records["pts_against"] = np.where(
+        poss_records["possession_owner_tno"] == 1,
+        poss_records["pts_2"],
+        poss_records["pts_1"],
+    )
+
+    poss_records = poss_records.dropna(subset=["team_name", "opponent"])
+    if poss_records.empty:
+        return pd.DataFrame()
+
+    poss_records["team_name"] = poss_records["team_name"].apply(_canonical_team)
+    poss_records["opponent"] = poss_records["opponent"].apply(_canonical_team)
+
+    poss_records["possessions"] = 1
+
+    offense = (
+        poss_records.groupby(["week", "game_id", "label", "team_name", "opponent"], dropna=False)
+        .agg(
+            poss_for=("possessions", "sum"),
+            pts_for=("pts_for", "sum"),
+        )
+        .reset_index()
+    )
+
+    if offense.empty:
+        return pd.DataFrame()
+
+    defense = (
+        offense[["week", "game_id", "team_name", "poss_for", "pts_for"]]
+        .rename(
+            columns={
+                "team_name": "opponent",
+                "poss_for": "poss_against",
+                "pts_for": "pts_against",
+            }
+        )
+    )
+
+    games = offense.merge(
+        defense,
+        on=["week", "game_id", "opponent"],
+        how="left",
+    )
+
+    games["poss_against"] = games["poss_against"].fillna(0)
+    games["pts_against"] = games["pts_against"].fillna(0)
+
+    for col in ("poss_for", "poss_against"):
+        games[col] = games[col].astype(float).round().astype(int)
+    for col in ("pts_for", "pts_against"):
+        games[col] = games[col].astype(float).round().astype(int)
+
+    games["week_num"] = games["week"].apply(_extract_week_number)
+    games["poss_diff"] = games["poss_for"] - games["poss_against"]
+    games["ortg"] = [
+        _safe_rating(row["pts_for"], row["poss_for"])
+        for _, row in games.iterrows()
+    ]
+    games["drtg"] = [
+        _safe_rating(row["pts_against"], row["poss_against"])
+        for _, row in games.iterrows()
+    ]
+    games["net"] = [
+        _safe_net(row["ortg"], row["drtg"])
+        for _, row in games.iterrows()
+    ]
+    games["margin"] = games["pts_for"] - games["pts_against"]
+    games["result"] = [
+        _result_text(row["pts_for"], row["pts_against"], int(round(row["margin"])))
+        for _, row in games.iterrows()
+    ]
+    games["score_text"] = games.apply(
+        lambda r: f"{int(round(r['pts_for']))}-{int(round(r['pts_against']))}",
+        axis=1,
+    )
 
     games["week_display"] = games.apply(_week_display, axis=1)
     games["week_sort"] = pd.to_numeric(games["week_num"], errors="coerce").fillna(9999)
@@ -218,7 +367,32 @@ def _load_game_log() -> pd.DataFrame:
         ),
         axis=1,
     )
-    return games.drop(columns=["week_sort", "game_sort"])
+
+    games = games.rename(columns={"label": "game_label"})
+
+    columns = [
+        "week",
+        "week_num",
+        "week_display",
+        "game_id",
+        "game_label",
+        "team_name",
+        "opponent",
+        "poss_for",
+        "poss_against",
+        "poss_diff",
+        "pts_for",
+        "pts_against",
+        "ortg",
+        "drtg",
+        "net",
+        "margin",
+        "result",
+        "score_text",
+        "game_number",
+        "axis_label",
+    ]
+    return games[columns]
 
 
 def _cumulative_table(games: pd.DataFrame) -> pd.DataFrame:
@@ -254,7 +428,7 @@ def _cumulative_table(games: pd.DataFrame) -> pd.DataFrame:
         for _, row in agg.iterrows()
     ]
     agg["drtg"] = [
-        _safe_rating(row["pts_against"], row["poss_for"])
+        _safe_rating(row["pts_against"], row["poss_against"])
         for _, row in agg.iterrows()
     ]
     agg["net"] = [
@@ -517,7 +691,7 @@ def create_dash_possessions(server=None, base_pathname: str = "/possessions/"):
             tot_pts_against = float(cum_filtered["pts_against"].sum())
             agg_games = int(cum_filtered["games"].sum())
             ortg = _safe_rating(tot_pts_for, tot_poss_for) if tot_poss_for else None
-            drtg = _safe_rating(tot_pts_against, tot_poss_for) if tot_poss_for else None
+            drtg = _safe_rating(tot_pts_against, tot_poss_against) if tot_poss_against else None
             net = _safe_net(ortg, drtg)
 
             def _fmt_int(val: float) -> str:
