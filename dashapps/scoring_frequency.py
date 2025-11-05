@@ -208,7 +208,59 @@ def _prepare_made_shots(df_raw: pd.DataFrame) -> pd.DataFrame:
 # Dash app
 # =============================================================================
 
-def _make_layout(app: Dash, has_week: bool, teams: List[str], players: List[str]):
+def _wrap_with_pageshell(app: Dash, base_pathname: str, content):
+    """Attach the shared sidebar shell when available (never returning ``None``).
+
+    ``PageShell`` can resolve to a callable, a module exposing ``page_shell``/``build``,
+    or be missing entirely.  This helper mirrors the hardened usage in other Dash apps
+    so misconfigured imports won't leave the layout unset.
+    """
+
+    if not PageShell:
+        return content
+
+    nav_items = []
+    try:
+        nav_items = list(getattr(app.server, "config", {}).get("NAV", []))
+    except Exception:
+        nav_items = []
+
+    def _attempt(func):
+        try:
+            out = func(content, nav_items, current_endpoint=base_pathname)
+        except TypeError:
+            # Some shells use keyword-only args; retry with keywords.
+            try:
+                out = func(content, nav_items=nav_items, current_endpoint=base_pathname)
+            except Exception:
+                return None
+        except Exception:
+            return html.Div([
+                html.H2("Scoring Frequency"),
+                html.P("Page shell failed; falling back to basic layout."),
+                content,
+            ])
+
+        return out if out is not None else content
+
+    # 1) Direct callable import
+    if callable(PageShell):
+        out = _attempt(PageShell)
+        if out is not None:
+            return out
+
+    # 2) Module/object attributes
+    for attr in ("page_shell", "build"):
+        func = getattr(PageShell, attr, None)
+        if callable(func):
+            out = _attempt(func)
+            if out is not None:
+                return out
+
+    return content
+
+
+def _make_layout(app: Dash, base_pathname: str, has_week: bool, teams: List[str], players: List[str]):
     controls = html.Div([
         html.Div([
             html.Label("Mode"),
@@ -297,9 +349,7 @@ def _make_layout(app: Dash, has_week: bool, teams: List[str], players: List[str]
         ])
     ], className="container mx-auto")
 
-    if PageShell:
-        return PageShell("Scoring Frequency (2P/3P)", inner)
-    return inner
+    return _wrap_with_pageshell(app, base_pathname, inner)
 
 
 def _initial_lists(slim: pd.DataFrame) -> Tuple[List[str], List[str], bool, int, int]:
@@ -322,6 +372,10 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
         suppress_callback_exceptions=True,
     )
 
+    # Dash>=2.15 validates ``layout`` during startup; set a placeholder immediately
+    # so unexpected errors don't leave the layout as ``None``.
+    app.layout = html.Div("Initializing Scoring Frequency…")
+
     raw = _read_pbp()
     slim = _prepare_made_shots(raw)
     teams, players, has_week, wmin, wmax = _initial_lists(slim)
@@ -331,7 +385,7 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
         server.config["SF_WEEK_MIN"] = wmin
         server.config["SF_WEEK_MAX"] = wmax
 
-    app.layout = _make_layout(app, has_week, teams, players)
+    app.layout = _make_layout(app, base_pathname, has_week, teams, players)
 
     # ---------------- Callbacks ----------------
 
