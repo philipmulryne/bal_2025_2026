@@ -1,0 +1,193 @@
+/* -------------------- CSS Variables -------------------- */
+:root {
+  --bg: #0b0f18;
+  --panel: rgba(255,255,255,0.08);
+  --panel-hover: rgba(255,255,255,0.12);
+  --text: #e6e9ef;
+  --muted: #a2acc0;
+  --accent: #7cf8ff;
+  --accent-2: #a78bfa;
+  --danger: #ff6b6b;
+  --ok: #6ee7b7;
+  --chip-bg: rgba(255,255,255,0.10);
+  --shadow: 0 8px 30px rgba(0,0,0,0.35);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --grid-gap: 18px;
+  --border: #1f2a44;
+  --row-alt: rgba(255,255,255,0.03);
+}
+[data-theme="light"]{
+  --bg: #f6f7fb;
+  --panel: rgba(255,255,255,0.9);
+  --panel-hover: rgba(255,255,255,1);
+  --text: #0f172a;
+  --muted: #4b5563;
+  --accent: #2563eb;
+  --accent-2: #a855f7;
+  --danger: #dc2626;
+  --ok: #059669;
+  --chip-bg: rgba(0,0,0,0.06);
+  --shadow: 0 15px 40px rgba(0,0,0,0.08);
+  --border: rgba(0,0,0,0.12);
+  --row-alt: rgba(0,0,0,0.04);
+}
+
+/* -------------------- Page Base -------------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+/* =========================
+   Player profile: table skin
+   ========================= */
+.pl-log {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.pl-log th,
+.pl-log td {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  vertical-align: middle;
+  color: var(--text);                /* ensure cell text inherits theme color */
+}
+
+/* Header row: visible text in both themes */
+.pl-log thead th {
+  background: #0f1a30;               /* dark header band (matches your template) */
+  color: var(--text) !important;     /* <-- fixes “invisible” header labels */
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Light theme header background override */
+[data-theme="light"] .pl-log thead th {
+  background: rgba(0,0,0,0.04);      /* subtle light band */
+}
+
+/* Alternate rows */
+.pl-log tbody tr:nth-child(odd) td {
+  background: var(--row-alt);
+}
+
+/* Keep links readable inside cells/headers */
+.pl-log a { color: inherit; text-decoration: none; }
+.pl-log a:hover { text-decoration: underline; }
+/* Background gradients + stars */
+.bg-gradient {
+  position: fixed; inset: 0; z-index: -1;
+  background:
+    radial-gradient(1000px 600px at -10% -10%, rgba(124,248,255,0.25), transparent 60%),
+    radial-gradient(800px 500px at 110% 10%, rgba(167,139,250,0.20), transparent 60%),
+    radial-gradient(900px 700px at 50% 120%, rgba(124,248,255,0.15), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  filter: saturate(120%);
+}
+.starfield {
+  position: fixed; inset: 0; pointer-events: none; opacity: .25;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, rgba(255,255,255,0)),
+    radial-gradient(1px 1px at 80% 40%, #fff, rgba(255,255,255,0)),
+    radial-gradient(1px 1px at 40% 80%, #fff, rgba(255,255,255,0)),
+    radial-gradient(1px 1px at 60% 60%, #fff, rgba(255,255,255,0));
+  background-repeat: no-repeat;
+  animation: drift 40s linear infinite;
+}
+@keyframes drift { from { transform: translateY(0px);} to { transform: translateY(-60px);} }
+
+.container { max-width: 1100px; margin: 28px auto; padding: 0 16px; }
+
+/* -------------------- Header -------------------- */
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.title { display:flex; align-items:center; gap:10px; }
+.logo {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: var(--shadow);
+}
+h1 { font-size: 24px; margin: 0; letter-spacing: 0.2px; }
+.subtitle { color: var(--muted); font-size: 14px; margin-top: 6px; }
+
+.actions { display:flex; align-items:center; gap:10px; }
+.btn {
+  border: 0; cursor: pointer; border-radius: 999px; padding: 10px 14px;
+  background: var(--panel); color: var(--text); box-shadow: var(--shadow);
+  font-weight: 600; display:flex; align-items:center; gap:8px;
+  transition: transform .08s ease, background .2s ease, opacity .2s ease;
+}
+.btn:hover { background: var(--panel-hover); transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+/* -------------------- Search -------------------- */
+.search-wrap { position: relative; margin: 22px 0 10px; }
+.search {
+  width: 100%; padding: 14px 44px; font-size: 16px;
+  background: var(--panel); border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text); border-radius: var(--radius);
+  box-shadow: var(--shadow); outline: none;
+}
+.search::placeholder { color: var(--muted); }
+.search-icon {
+  position:absolute; left: 14px; top: 50%; transform: translateY(-50%); opacity: .7;
+}
+.kbd {
+  position:absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  background: var(--chip-bg); color: var(--muted);
+  border-radius: 8px; padding: 2px 8px; font-size: 12px; font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* -------------------- Cards Grid -------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--grid-gap);
+  margin-top: 18px;
+}
+.card {
+  position: relative;
+  background: var(--panel);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: var(--radius);
+  padding: 16px 16px 14px;
+  box-shadow: var(--shadow);
+  text-decoration: none; color: inherit;
+  transition: transform .12s ease, background .2s ease, border-color .2s ease;
+}
+.card:hover { transform: translateY(-3px); background: var(--panel-hover); border-color: rgba(255,255,255,0.18);} 
+.card .emoji { font-size: 22px; }
+.card h3 { margin: 10px 0 6px; font-size: 18px; line-height: 1.2; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; min-height: 40px; }
+.chip {
+  position: absolute; top: 12px; right: 12px;
+  padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  background: var(--chip-bg); border: 1px solid rgba(255,255,255,0.12); color: var(--muted);
+}
+.chip.ok { color: var(--ok); }
+.chip.err { color: var(--danger); }
+.shortcut {
+  position:absolute; left: 12px; top: 12px;
+  padding: 2px 8px; border-radius: 8px; font-size: 12px; font-weight: 700;
+  background: var(--chip-bg); border: 1px solid rgba(255,255,255,0.12); color: var(--muted);
+}
+
+/* -------------------- Footer / Meta -------------------- */
+.meta { display:grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--grid-gap); margin-top: 24px; }
+.panel { background: var(--panel); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 14px; box-shadow: var(--shadow); }
+.panel h4 { margin: 0 0 10px; font-size: 14px; color: var(--muted); }
+.kv { display:flex; justify-content: space-between; font-size:14px; margin: 6px 0; }
+.kv code { background: rgba(0,0,0,0.18); padding: 2px 6px; border-radius: 6px; }
+
+/* -------------------- Tiny helpers -------------------- */
+a { color: inherit; }
+.muted { color: var(--muted); }
+.spacer { height: 2px; }

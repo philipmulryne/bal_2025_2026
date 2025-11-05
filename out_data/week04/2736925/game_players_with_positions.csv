@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,GALATASARAY MCT TECHNIC,GSM,106,J. Robinson Jr,Jerome,Robinson Jr,1,0,,0,,,8:15,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,1,0,0,0,3,0,J. Robinson Jr,1:106
+1,GALATASARAY MCT TECHNIC,GSM,101,T. Görener,Tibet Deniz,Görener,5,0,,0,,,1:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,T. Görener,1:101
+1,GALATASARAY MCT TECHNIC,GSM,109,W. Cummings,William,Cummings,7,1,1.0,1,,,37:08,4,11,36,1,3,33,3,8,37,5,7,71,5,0,5,5,4,0,0,0,3,7,14,2,8,-5,6,W. Cummings,1:109
+1,GALATASARAY MCT TECHNIC,GSM,71,C. Korkmaz,Can,Korkmaz,8,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,C. Korkmaz,1:71
+1,GALATASARAY MCT TECHNIC,GSM,107,R. Meeks,Robinson Jr,Meeks,9,0,,1,,,18:35,3,8,37,1,5,20,2,3,66,0,0,0,0,1,1,0,0,0,0,0,2,0,7,0,0,-12,4,R. Meeks,1:107
+1,GALATASARAY MCT TECHNIC,GSM,70,R. Öncel,Ridvan,Öncel,10,1,,0,,,13:44,1,3,33,0,0,0,1,3,33,0,0,0,1,2,3,0,0,0,0,1,3,3,2,0,0,-6,2,R. Öncel,1:70
+1,GALATASARAY MCT TECHNIC,GSM,103,J. Palmer Jr,James Alfred,Palmer Jr,12,1,,1,,,35:47,8,17,47,2,7,28,6,10,60,2,4,50,2,0,2,7,2,0,0,0,1,3,20,4,3,-14,6,J. Palmer Jr,1:103
+1,GALATASARAY MCT TECHNIC,GSM,108,C. Bishop,Christian,Bishop,13,0,,0,,,11:09,1,2,50,0,0,0,1,2,50,0,0,0,1,0,1,0,0,0,0,1,1,1,2,0,0,-1,2,C. Bishop,1:108
+1,GALATASARAY MCT TECHNIC,GSM,38,A. Tuncer,Ahmet Bugrahan,Tuncer,19,0,,1,,,22:22,2,8,25,2,5,40,0,3,0,5,6,83,2,1,3,3,1,1,0,0,3,4,11,3,0,-3,0,A. Tuncer,1:38
+1,GALATASARAY MCT TECHNIC,GSM,105,F. Gillespie ,Frederick ,Gillespie ,33,1,,0,,,22:34,1,3,33,0,0,0,1,3,33,1,2,50,3,2,5,0,3,2,1,0,5,4,3,0,0,-1,2,F. Gillespie ,1:105
+1,GALATASARAY MCT TECHNIC,GSM,104,F. White Jr,Fabian,White Jr,35,1,,1,,,26:09,5,9,55,1,4,25,4,5,80,5,6,83,3,3,6,2,0,0,0,0,3,4,16,2,2,-4,8,F. White Jr,1:104
+1,GALATASARAY MCT TECHNIC,GSM,99,M. Yasar,Muhsin,Yasar,77,0,,0,,,2:36,0,0,0,0,0,0,0,0,0,1,2,50,0,0,0,0,0,0,0,0,3,1,1,0,0,-3,0,M. Yasar,1:99
+2,FENERBAHÇE BEKO,FBB,99,A. Bacot Jr,Armando,Bacot Jr,00,1,,0,,,11:04,0,0,0,0,0,0,0,0,0,2,2,100,2,1,3,1,1,1,1,0,2,3,2,2,0,5,0,A. Bacot Jr,2:99
+2,FENERBAHÇE BEKO,FBB,77,J. Birsen,James Metecan,Birsen,1,0,,0,,,13:06,0,3,0,0,0,0,0,3,0,2,2,100,1,0,1,0,2,0,1,1,2,1,2,0,0,-3,0,J. Birsen,2:77
+2,FENERBAHÇE BEKO,FBB,94,W. Baldwin Iv,Wade M,Baldwin Iv,2,0,,1,,,23:36,2,13,15,0,4,0,2,9,22,2,2,100,2,0,2,8,3,1,0,0,3,2,6,0,0,5,2,W. Baldwin Iv,2:94
+2,FENERBAHÇE BEKO,FBB,100,S. Vilbekin,Scott Jordan,Vilbekin,3,0,,0,,,11:05,3,3,100,2,2,100,1,1,100,2,2,100,0,1,1,3,0,0,0,0,4,2,10,1,0,0,2,S. Vilbekin,2:100
+2,FENERBAHÇE BEKO,FBB,92,N. Melli,Nicolo,Melli,4,0,,1,,,21:56,6,8,75,3,4,75,3,4,75,3,4,75,1,5,6,1,1,0,0,0,2,4,18,3,0,0,4,N. Melli,2:92
+2,FENERBAHÇE BEKO,FBB,76,M. Mahmutoglu,Melih,Mahmutoglu,10,1,1.0,0,,,14:40,1,3,33,1,3,33,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,3,0,0,-1,0,M. Mahmutoglu,2:76
+2,FENERBAHÇE BEKO,FBB,79,T. Biberoviç,Tarik,Biberoviç,13,1,,1,,,26:21,7,10,70,4,6,66,3,4,75,0,0,0,4,0,4,2,0,0,0,0,3,1,18,2,3,2,6,T. Biberoviç,2:79
+2,FENERBAHÇE BEKO,FBB,89,O. Bitim,Onuralp,Bitim,17,0,,0,,,13:30,2,5,40,1,3,33,1,2,50,0,0,0,3,0,3,0,0,0,0,0,2,1,5,0,0,8,2,O. Bitim,2:89
+2,FENERBAHÇE BEKO,FBB,98,M. Jantunen,Mikael,Jantunen,18,1,,0,,,16:08,2,2,100,1,1,100,1,1,100,0,0,0,3,1,4,0,0,1,0,0,3,1,5,0,0,7,2,M. Jantunen,2:98
+2,FENERBAHÇE BEKO,FBB,95,D. Hall,Devon Howard,Hall,20,1,,1,,,28:55,2,7,28,0,2,0,2,5,40,7,8,87,4,0,4,2,3,1,0,0,3,4,11,0,2,12,4,D. Hall,2:95
+2,FENERBAHÇE BEKO,FBB,93,B. Colson ,Bonzie,Colson ,50,0,,0,,,6:56,0,2,0,0,0,0,0,2,0,0,0,0,4,1,5,0,0,0,0,0,0,1,0,0,0,1,0,B. Colson ,2:93
+2,FENERBAHÇE BEKO,FBB,91,K. Birch,Khem,Birch,92,0,,1,,,12:43,1,3,33,0,1,0,1,2,50,3,3,100,1,1,2,0,2,1,0,0,3,4,5,3,0,9,2,K. Birch,2:91

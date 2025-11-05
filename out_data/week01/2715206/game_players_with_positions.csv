@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,BESIKTAS GAIN,BJK,70,J. Mathews,Jonah Kenneth,Mathews,0,1,,1,,,28:12,4,14,28,2,7,28,2,7,28,0,0,0,2,1,3,1,4,2,0,1,3,3,10,5,2,-4,2,J. Mathews,1:70
+1,BESIKTAS GAIN,BJK,71,D. Dotson,Devon Durrell,Dotson,1,1,,0,,,20:14,3,9,33,2,6,33,1,3,33,0,0,0,3,0,3,6,0,0,0,0,3,2,8,0,0,-9,2,D. Dotson,1:71
+1,BESIKTAS GAIN,BJK,72,I. Kamagate,Ismael Sindou,Kamagate,4,0,,0,,,11:35,0,2,0,0,0,0,0,2,0,0,0,0,1,3,4,0,3,1,0,0,1,0,0,0,0,3,0,I. Kamagate,1:72
+1,BESIKTAS GAIN,BJK,75,B. Ugurlu,Berk Ibrahim,Ugurlu,6,0,,1,,,19:46,3,8,37,0,1,0,3,7,42,0,0,0,4,0,4,4,0,1,0,3,2,2,6,0,2,14,4,B. Ugurlu,1:75
+1,BESIKTAS GAIN,BJK,74,Y. Arslan,Yigit,Arslan,7,1,1.0,0,,,20:36,4,7,57,3,6,50,1,1,100,0,0,0,3,0,3,0,0,0,0,0,4,0,11,3,3,-4,2,Y. Arslan,1:74
+1,BESIKTAS GAIN,BJK,66,B. Lemar,Brynton Jevon,Lemar,11,0,,0,,,11:48,3,5,60,1,3,33,2,2,100,0,2,0,1,0,1,1,1,1,0,0,0,1,7,2,3,9,4,B. Lemar,1:66
+1,BESIKTAS GAIN,BJK,76,C. Kus,Canberk,Kus,12,0,,0,,,8:17,3,3,100,2,2,100,1,1,100,0,0,0,0,1,1,1,0,0,0,0,4,0,8,0,2,6,2,C. Kus,1:76
+1,BESIKTAS GAIN,BJK,3,Y. Çoban,Yigit,Çoban,15,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Y. Çoban,1:3
+1,BESIKTAS GAIN,BJK,1,E. Adigüzel,Emir,Adigüzel,19,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Adigüzel,1:1
+1,BESIKTAS GAIN,BJK,67,A. Brown,Anthony Lejohn,Brown,21,0,,1,,,19:24,5,9,55,2,5,40,3,4,75,2,2,100,1,0,1,0,0,1,0,1,2,1,14,0,2,9,2,A. Brown,1:67
+1,BESIKTAS GAIN,BJK,68,V. Brown,Vittorio,Brown,33,1,,1,,,31:43,2,8,25,0,3,0,2,5,40,0,0,0,2,0,2,4,1,0,1,2,4,0,4,0,0,-1,4,V. Brown,1:68
+1,BESIKTAS GAIN,BJK,62,A. Zizic,Ante Toni,Zizic,41,1,,1,,,28:25,3,5,60,0,0,0,3,5,60,3,6,50,5,5,10,1,2,1,0,1,2,7,9,0,0,2,6,A. Zizic,1:62
+2,TÜRK TELEKOM,TTK,80,M. Devoe,Michael Jaden,Devoe,0,0,,0,,,4:31,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,-3,0,M. Devoe,2:80
+2,TÜRK TELEKOM,TTK,75,K. Allman,Kyle Lindsay,Allman,1,0,,1,,,27:52,6,13,46,2,4,50,4,9,44,4,5,80,6,0,6,2,3,0,2,0,0,6,18,0,3,-5,8,K. Allman,2:75
+2,TÜRK TELEKOM,TTK,7,B. Durmaz,Berkan,Durmaz,3,1,,0,,,16:10,2,4,50,0,1,0,2,3,66,0,1,0,3,2,5,0,0,0,0,1,2,1,4,2,0,-10,2,B. Durmaz,2:7
+2,TÜRK TELEKOM,TTK,6,E. Kosut,Emircan,Kosut,5,0,,0,,,5:33,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,2,0,0,0,0,-2,0,E. Kosut,2:6
+2,TÜRK TELEKOM,TTK,3,A. Kahraman,Ata,Kahraman,6,0,,0,,,4:48,1,3,33,0,1,0,1,2,50,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,-7,2,A. Kahraman,2:3
+2,TÜRK TELEKOM,TTK,74,J. Usher,Jordan Emanuel ,Usher,8,1,,0,,,19:31,3,6,50,0,2,0,3,4,75,2,2,100,2,0,2,0,1,1,0,0,0,2,8,2,2,-6,6,J. Usher,2:74
+2,TÜRK TELEKOM,TTK,77,J. Smith,Jaleen Devon,Smith,9,1,,1,,,31:03,2,8,25,1,4,25,1,4,25,0,0,0,1,0,1,5,3,1,0,0,3,0,5,0,2,-2,2,J. Smith,2:77
+2,TÜRK TELEKOM,TTK,76,M. Simonovic,Marko,Simonovic,11,0,,1,,,22:52,4,8,50,0,2,0,4,6,66,4,4,100,1,3,4,0,1,1,1,0,1,2,12,4,2,5,8,M. Simonovic,2:76
+2,TÜRK TELEKOM,TTK,71,A. Biçer,Atakan Murat,Biçer,15,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Biçer,2:71
+2,TÜRK TELEKOM,TTK,5,D. Özdemiroglu,Dogus,Özdemiroglu,18,1,1.0,1,,,31:40,0,10,0,0,5,0,0,5,0,3,4,75,8,2,10,2,5,2,1,0,4,5,3,0,2,9,0,D. Özdemiroglu,2:5
+2,TÜRK TELEKOM,TTK,8,Y. Gültekin,Yavuz,Gültekin,19,0,,0,,,9:59,2,2,100,0,0,0,2,2,100,0,0,0,1,1,2,1,0,0,0,0,0,1,4,0,2,-9,4,Y. Gültekin,2:8
+2,TÜRK TELEKOM,TTK,78,K. Bankston,Kristeon Lamar,Bankston,30,1,,1,,,26:01,4,5,80,0,1,0,4,4,100,8,9,88,3,4,7,2,0,1,3,0,4,8,16,4,2,5,8,K. Bankston,2:78

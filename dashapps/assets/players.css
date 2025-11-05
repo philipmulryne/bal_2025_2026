@@ -1,0 +1,222 @@
+:root {
+  --bg-soft: #f7f7fb;
+  --bg-row-alt: #fafbff;
+  --text-dim: #6b7280;
+  --text-strong: #111827;
+  --accent: #2563eb;
+  --accent-2: #10b981;
+  --border: #e5e7eb;
+}
+
+/* Basic page spacing */
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Controls grid */
+.controls {
+  margin: 8px 0 4px;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.control-wide {
+  grid-column: span 2;
+}
+.control-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  letter-spacing: .02em;
+}
+.control-actions {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+/* Collapsible filters */
+#pl-filters {
+  border: 1px solid var(--pl-border, #e6e8f0);
+  border-radius: 10px;
+  background: var(--pl-bg, #fafbff);
+  padding: 6px 10px;
+  margin: 6px 0 10px;
+}
+#pl-filters > summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+#pl-filters > summary::before {
+  content: "☰";
+  opacity: 0.7;
+}
+
+/* Grid layout inside the filters panel */
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(180px, 1fr));
+  gap: 10px;
+  align-items: end;
+  margin-top: 8px;
+}
+
+/* KPI chips */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.kpi {
+  background: #ffffff;
+  border: 1px solid #eceef6;
+  border-radius: 12px;
+  padding: 8px 10px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.02);
+}
+.kpi .kpi-label { font-size: 12px; color: #6b7280; }
+.kpi .kpi-value { font-size: 18px; font-weight: 700; }
+
+/* Inline row-detail block (inserted as a synthetic row under the player) */
+.pl-row-detail {
+  margin: 6px 0 2px;
+  padding: 8px 10px;
+  background: #f6f8ff;
+  border-left: 3px solid #3b82f6;
+  border-radius: 6px;
+}
+.pl-row-detail-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #334155;
+}
+.pl-row-detail-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+.pl-row-detail-table th,
+.pl-row-detail-table td {
+  border: 1px solid #e5e7eb;
+  padding: 3px 6px;
+  text-align: right;
+}
+.pl-row-detail-table th:first-child,
+.pl-row-detail-table td:first-child {
+  text-align: left;
+}
+
+/* Dark mode tweaks (Dash often inherits OS/browser) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pl-bg: #0b1220;
+    --pl-border: #1d2942;
+  }
+  #pl-filters { background: var(--pl-bg); border-color: var(--pl-border); }
+  .kpi { background: #0e1628; border-color: #1b2540; }
+  .kpi .kpi-label { color: #aab2c0; }
+  .kpi .kpi-value { color: #e5eaf3; }
+  .pl-row-detail { background: #101a2f; border-left-color: #60a5fa; }
+  .pl-row-detail-title { color: #dbe6ff; }
+  .pl-row-detail-table th,
+  .pl-row-detail-table td { border-color: #1f2a44; }
+}
+
+/* Compact mode toggle via data-attribute on root */
+#pl-root[data-compact="1"] .dash-table-container .dash-spreadsheet .row, 
+#pl-root[data-compact="1"] .dash-table-container .dash-spreadsheet .cell {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+
+
+/* Buttons */
+.button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text-strong);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow .15s ease, transform .02s ease;
+}
+.button:hover {
+  box-shadow: 0 1px 0 rgba(17, 24, 39, .04), 0 2px 8px rgba(17, 24, 39, .06);
+}
+.button:active {
+  transform: translateY(1px);
+}
+
+/* KPI strip */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 6px 0 12px;
+}
+.kpi {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.kpi-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 2px;
+}
+.kpi-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+/* DataTable tweaks */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr:nth-child(odd) td {
+  background: var(--bg-row-alt);
+}
+.dash-table-container .dash-header {
+  background: var(--bg-soft) !important;
+}
+.dash-table-container td, .dash-table-container th {
+  border-color: var(--border) !important;
+}
+
+/* Sticky first columns shadow hint */
+.dash-table-container .dash-fixed-column, 
+.dash-table-container .dash-fixed-column + td {
+  box-shadow: 1px 0 0 0 var(--border), 4px 0 8px -6px rgba(0,0,0,.12);
+}
+
+/* RangeSlider spacing */
+.rc-slider {
+  padding: 6px 6px 14px 2px;
+}
+
+/* Compact mode: flip via data-attribute on #pl-root */
+#pl-root[data-compact="1"] .dash-table-container td,
+#pl-root[data-compact="1"] .dash-table-container th {
+  padding: 3px 6px !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+#pl-root[data-compact="1"] .kpi {
+  padding: 8px 10px;
+}
+#pl-root[data-compact="1"] .kpi-value {
+  font-size: 16px;
+}
+
+/* Small screens */
+@media (max-width: 900px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+}

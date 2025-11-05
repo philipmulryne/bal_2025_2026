@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,MERSİN SPOR,MSK,56,A. Olaseni,Abodunrin Gabriel,Olaseni,0,1,,0,,,30:22,3,4,75,0,0,0,3,4,75,4,4,100,4,3,7,6,3,0,0,1,3,5,10,0,0,-8,0,A. Olaseni,1:56
+1,MERSİN SPOR,MSK,5,J. Cobbs,Justin,Cobbs,1,1,,1,,,27:51,1,7,14,1,2,50,0,5,0,9,10,90,1,0,1,6,2,0,0,0,3,7,12,2,4,6,0,J. Cobbs,1:5
+1,MERSİN SPOR,MSK,3,K. Özmizrak,Kartal,Özmizrak,3,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,K. Özmizrak,1:3
+1,MERSİN SPOR,MSK,10,R. March Jr,Ronald Eugene,March Jr,4,0,,0,,,16:40,2,5,40,1,2,50,1,3,33,0,0,0,2,0,2,0,0,2,0,1,0,1,5,0,0,-11,2,R. March Jr,1:10
+1,MERSİN SPOR,MSK,8,L. Apaydin,Leon Harun,Apaydin,5,0,,0,,,0:30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-3,0,L. Apaydin,1:8
+1,MERSİN SPOR,MSK,53,K. Çekici,Koray,Çekici,6,0,,0,,,15:37,0,0,0,0,0,0,0,0,0,2,2,100,1,3,4,0,0,0,0,0,1,1,2,2,0,-6,0,K. Çekici,1:53
+1,MERSİN SPOR,MSK,57,A. Cowan,Anthony Dewayne,Cowan,7,0,,1,,,23:31,6,15,40,3,9,33,3,6,50,4,8,50,0,0,0,5,1,0,0,0,2,4,19,5,0,-3,4,A. Cowan,1:57
+1,MERSİN SPOR,MSK,6,F. Cruz Saldivar,Francisco Javier,Cruz Saldivar,9,1,1.0,1,,,26:41,6,14,42,3,6,50,3,8,37,2,2,100,1,0,1,3,2,1,0,1,3,1,17,3,0,-12,6,F. Cruz Saldivar,1:6
+1,MERSİN SPOR,MSK,4,E. Tirpanci,Efe Ergi,Tirpanci,10,1,,1,,,25:02,1,2,50,0,1,0,1,1,100,0,0,0,4,0,4,1,0,2,1,0,4,3,2,0,0,-6,2,E. Tirpanci,1:4
+1,MERSİN SPOR,MSK,54,A. Alyanak,Anil,Alyanak,11,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Alyanak,1:54
+1,MERSİN SPOR,MSK,9,J. White,Jackson Thomas,White,14,1,,1,,,27:54,2,4,50,1,2,50,1,2,50,1,2,50,3,1,4,1,1,0,0,0,2,1,6,0,0,-9,2,J. White,1:9
+1,MERSİN SPOR,MSK,7,B. Bentil,Benjamin,Bentil,50,0,,0,,,5:52,2,2,100,1,1,100,1,1,100,0,0,0,1,1,2,2,0,0,0,0,1,1,5,0,3,7,0,B. Bentil,1:7
+2,FENERBAHÇE BEKO,FBB,99,A. Bacot Jr,Armando Linwood,Bacot Jr,00,1,,1,,,27:10,4,9,44,2,4,50,2,5,40,1,1,100,0,2,2,2,1,1,0,1,4,1,11,3,0,9,4,A. Bacot Jr,2:99
+2,FENERBAHÇE BEKO,FBB,77,J. Birsen,James Metecan,Birsen,1,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,J. Birsen,2:77
+2,FENERBAHÇE BEKO,FBB,94,W. Baldwin Iv,Wade M,Baldwin Iv,2,0,,1,,,23:04,3,5,60,0,0,0,3,5,60,3,4,75,2,0,2,11,2,0,0,0,3,6,9,1,0,6,6,W. Baldwin Iv,2:94
+2,FENERBAHÇE BEKO,FBB,92,N. Melli,Nicolo,Melli,4,1,,0,,,10:02,0,0,0,0,0,0,0,0,0,0,0,0,3,2,5,1,2,0,0,0,3,3,0,0,0,4,0,N. Melli,2:92
+2,FENERBAHÇE BEKO,FBB,78,M. Eksioglu,Mert Emre,Eksioglu,5,0,,0,,,2:37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,M. Eksioglu,2:78
+2,FENERBAHÇE BEKO,FBB,76,M. Mahmutoglu,Melih,Mahmutoglu,10,1,1.0,0,,,21:27,5,11,45,4,8,50,1,3,33,0,0,0,1,0,1,2,0,0,0,0,1,0,14,0,3,12,0,M. Mahmutoglu,2:76
+2,FENERBAHÇE BEKO,FBB,79,T. Biberoviç,Tarik,Biberoviç,13,1,,1,,,26:32,7,10,70,4,5,80,3,5,60,0,0,0,4,3,7,1,2,0,0,0,3,1,18,2,0,11,6,T. Biberoviç,2:79
+2,FENERBAHÇE BEKO,FBB,89,O. Bitim,Onuralp,Bitim,17,0,,0,,,11:07,1,3,33,1,3,33,0,0,0,0,0,0,2,0,2,0,0,0,0,0,3,0,3,0,0,-6,0,O. Bitim,2:89
+2,FENERBAHÇE BEKO,FBB,98,M. Jantunen,Mikael Olli Axel,Jantunen,18,0,,1,,,22:54,4,11,36,1,7,14,3,4,75,0,1,0,1,4,5,0,0,0,2,0,3,1,9,0,2,-1,4,M. Jantunen,2:98
+2,FENERBAHÇE BEKO,FBB,95,D. Hall,Devon Howard,Hall,20,1,,1,,,26:00,5,9,55,2,5,40,3,4,75,4,5,80,0,1,1,5,2,0,0,0,1,3,16,2,0,5,4,D. Hall,2:95
+2,FENERBAHÇE BEKO,FBB,93,B. Colson Ii,Bonzie Alexander,Colson Ii,50,0,,0,,,16:17,1,4,25,1,4,25,0,0,0,4,4,100,4,1,5,1,0,1,0,0,2,3,7,2,0,-2,0,B. Colson Ii,2:93
+2,FENERBAHÇE BEKO,FBB,91,K. Birch,Khem,Birch,92,0,,0,,,12:50,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0,0,0,K. Birch,2:91

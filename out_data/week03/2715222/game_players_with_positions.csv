@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,TRABZONSPOR,TRB,11,M. Reed,Marcquise Deandre,Reed,0,1,,1,,,34:13,8,15,53,0,4,0,8,11,72,15,17,88,4,0,4,6,1,3,0,0,4,12,31,0,10,4,14,M. Reed,1:11
+1,TRABZONSPOR,TRB,14,D. Grant,Denove Octavon,Grant,1,1,,0,,,8:42,0,2,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,3,2,0,0,0,-9,0,D. Grant,1:14
+1,TRABZONSPOR,TRB,10,T. Tinkle,Tres Anthony,Tinkle,3,1,,0,,,16:16,3,3,100,0,0,0,3,3,100,0,0,0,0,1,1,0,2,2,0,0,1,0,6,2,4,-1,6,T. Tinkle,1:10
+1,TRABZONSPOR,TRB,4,I. Ulusoy,Ismail Cem,Ulusoy,5,0,1.0,1,,,25:13,3,4,75,1,2,50,2,2,100,1,2,50,1,0,1,4,6,2,0,0,4,1,8,0,0,3,4,I. Ulusoy,1:4
+1,TRABZONSPOR,TRB,6,A. Güney,Alican,Güney,7,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Güney,1:6
+1,TRABZONSPOR,TRB,7,J. Gordon,Jitaurious Tykyvion,Gordon,8,0,,1,,,18:07,1,6,16,0,3,0,1,3,33,0,0,0,0,0,0,4,0,1,0,1,2,0,2,0,2,-15,2,J. Gordon,1:7
+1,TRABZONSPOR,TRB,3,B. Demir,Berk,Demir,11,0,,0,,,11:36,1,5,20,0,4,0,1,1,100,0,0,0,2,0,2,1,0,0,0,0,2,0,2,0,0,2,2,B. Demir,1:3
+1,TRABZONSPOR,TRB,5,O. Ulubay,Okben,Ulubay,13,1,,1,,,27:30,3,8,37,2,6,33,1,2,50,1,2,50,1,0,1,2,1,1,0,0,1,1,9,0,1,-13,0,O. Ulubay,1:5
+1,TRABZONSPOR,TRB,12,A. Yeboah,Akwasi Abeyie,Yeboah,15,0,,1,,,19:06,3,4,75,2,3,66,1,1,100,1,2,50,2,0,2,0,1,2,0,0,1,2,9,0,3,3,2,A. Yeboah,1:12
+1,TRABZONSPOR,TRB,2,E. Arar,Ege,Arar,19,0,,0,,,10:39,1,1,100,0,0,0,1,1,100,0,0,0,1,0,1,0,1,0,0,0,3,0,2,0,0,-7,2,E. Arar,1:2
+1,TRABZONSPOR,TRB,13,K. Silins,Karlis,Silins,25,0,,0,,,9:28,3,6,50,0,1,0,3,5,60,2,2,100,2,0,2,1,0,0,0,0,1,2,8,3,0,1,6,K. Silins,1:13
+1,TRABZONSPOR,TRB,9,A. Delgado Astacio,Angel Luis,Delgado Astacio,31,1,,0,,,19:10,1,4,25,0,0,0,1,4,25,0,0,0,4,3,7,0,3,1,1,0,4,1,2,0,0,2,2,A. Delgado Astacio,1:9
+2,BURSASPOR BASKETBOL,BUR,133,B. Childress,Brandon Reginald,Childress,0,1,,1,,,29:02,5,6,83,2,3,66,3,3,100,7,7,100,2,0,2,7,9,0,0,0,2,5,19,0,0,22,0,B. Childress,2:133
+2,BURSASPOR BASKETBOL,BUR,3,T. Akdamar,Tevfik,Akdamar,3,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akdamar,2:3
+2,BURSASPOR BASKETBOL,BUR,144,M. Parsons,Malik Disjohn,Parsons,5,1,,1,,,32:32,4,10,40,0,1,0,4,9,44,6,6,100,2,1,3,3,0,2,0,0,2,4,14,4,2,13,6,M. Parsons,2:144
+2,BURSASPOR BASKETBOL,BUR,101,H. Köksal,Hüseyin Göksenin,Köksal,7,1,1.0,1,,,26:37,1,4,25,0,3,0,1,1,100,1,4,25,2,1,3,5,2,1,0,0,3,2,3,0,0,14,2,H. Köksal,2:101
+2,BURSASPOR BASKETBOL,BUR,126,B. Satir,Bora,Satir,10,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,B. Satir,2:126
+2,BURSASPOR BASKETBOL,BUR,102,B. Akin,Berk Can,Akin,11,0,,1,,,13:51,1,4,25,1,2,50,0,2,0,4,4,100,4,0,4,1,3,2,0,0,2,2,7,3,2,-9,0,B. Akin,2:102
+2,BURSASPOR BASKETBOL,BUR,136,J. Delaurier,Javin Que,Delaurier,12,0,,0,,,8:15,0,0,0,0,0,0,0,0,0,2,2,100,3,0,3,0,0,2,0,0,3,1,2,0,0,-5,0,J. Delaurier,2:136
+2,BURSASPOR BASKETBOL,BUR,129,B. Crawford,Bryant Dejuan,Crawford,13,0,,0,,,10:58,1,5,20,1,4,25,0,1,0,3,4,75,0,0,0,0,1,0,0,0,2,2,6,0,0,-16,0,B. Crawford,2:129
+2,BURSASPOR BASKETBOL,BUR,4,Y. Onar,Yesukan,Onar,14,0,,0,,,4:38,0,0,0,0,0,0,0,0,0,0,2,0,1,0,1,0,0,0,0,0,1,1,0,0,0,-3,0,Y. Onar,2:4
+2,BURSASPOR BASKETBOL,BUR,134,V. King,Vincent Earl,King,22,0,,0,,,9:52,0,2,0,0,0,0,0,2,0,0,0,0,1,1,2,0,2,1,0,0,1,1,0,0,0,-8,0,V. King,2:134
+2,BURSASPOR BASKETBOL,BUR,135,A. Konontsuk,Artur,Konontsuk,34,1,,1,,,34:20,10,13,76,5,6,83,5,7,71,0,0,0,2,3,5,3,2,0,0,0,3,1,25,5,2,7,8,A. Konontsuk,2:135
+2,BURSASPOR BASKETBOL,BUR,127,L. Nnoko,Landry,Nnoko,35,1,,0,,,29:56,4,7,57,0,0,0,4,7,57,1,1,100,6,2,8,0,0,1,1,1,2,7,9,0,0,15,8,L. Nnoko,2:127

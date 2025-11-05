@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,ANADOLU EFES,EFS,72,R. Beaubois,Rodrigue,Beaubois,1,0,1.0,0,,,18:40,3,6,50,1,3,33,2,3,66,0,0,0,1,0,1,1,1,1,0,0,1,0,7,0,2,8,4,R. Beaubois,1:72
+1,ANADOLU EFES,EFS,81,S. Hazer,Sehmus,Hazer,2,0,,1,,,21:21,3,7,42,1,4,25,2,3,66,5,8,62,1,0,1,3,1,2,1,0,2,4,12,0,7,-6,4,S. Hazer,1:81
+1,ANADOLU EFES,EFS,92,J. Loyd,Jordan,Loyd,3,0,,0,,,7:29,1,3,33,0,1,0,1,2,50,0,0,0,1,0,1,0,0,0,0,0,1,0,2,0,2,8,2,J. Loyd,1:92
+1,ANADOLU EFES,EFS,87,N. Weiler-Babb,Nick,Weiler-Babb,8,1,,0,,,21:28,3,4,75,1,2,50,2,2,100,3,3,100,1,0,1,8,0,2,0,0,2,3,10,0,2,24,4,N. Weiler-Babb,1:87
+1,ANADOLU EFES,EFS,88,I. Cordinier,Isaia,Cordinier,10,1,,0,,,21:00,6,9,66,4,6,66,2,3,66,2,2,100,7,0,7,1,2,0,0,0,1,1,18,0,5,28,4,I. Cordinier,1:88
+1,ANADOLU EFES,EFS,86,R. Smits,Rolands,Smits,11,0,,0,,,12:28,1,3,33,0,1,0,1,2,50,0,0,0,4,2,6,3,0,0,0,0,1,0,2,0,0,-6,2,R. Smits,1:86
+1,ANADOLU EFES,EFS,73,B. Dessert,Brice,Dessert,13,1,,0,,,20:53,2,3,66,0,0,0,2,3,66,2,2,100,2,0,2,0,1,0,1,0,1,3,6,0,0,32,4,B. Dessert,1:73
+1,ANADOLU EFES,EFS,71,B. Yildizli,Burak Can,Yildizli,19,0,,1,,,5:02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-6,0,B. Yildizli,1:71
+1,ANADOLU EFES,EFS,75,C. Swider,Cole,Swider,21,0,,1,,,26:07,4,8,50,2,6,33,2,2,100,1,2,50,5,0,5,0,2,0,0,0,2,3,11,6,2,-6,4,C. Swider,1:75
+1,ANADOLU EFES,EFS,82,S. Mutaf,Sarper David,Mutaf,23,0,,1,,,10:00,0,0,0,0,0,0,0,0,0,1,2,50,1,0,1,0,2,0,0,0,1,1,1,0,0,-7,0,S. Mutaf,1:82
+1,ANADOLU EFES,EFS,89,E. Osmani,Ercan,Osmani,24,1,,0,,,13:42,4,5,80,1,1,100,3,4,75,2,2,100,3,0,3,4,4,0,0,0,2,1,11,0,0,25,6,E. Osmani,1:89
+1,ANADOLU EFES,EFS,80,E. Yilmaz,Erkan,Yilmaz,33,1,,1,,,21:50,3,5,60,1,3,33,2,2,100,3,3,100,6,1,7,2,1,3,1,0,1,3,10,2,2,-4,4,E. Yilmaz,1:80
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,3,E. Tanisan,Emre,Tanisan,0,1,,0,,,20:02,5,9,55,1,3,33,4,6,66,2,2,100,2,1,3,0,1,3,0,0,3,3,13,2,2,-26,8,E. Tanisan,2:3
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,11,S. Griffin,Samuel Gevaris,Griffin,1,1,,1,,,19:03,1,11,9,1,2,50,0,9,0,0,0,0,1,1,2,3,0,0,0,2,1,1,3,0,0,-14,0,S. Griffin,2:11
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,21,K. Smith Jr,Kenneth Jerome,Smith Jr,4,1,,0,,,31:16,2,4,50,2,4,50,0,0,0,4,5,80,2,0,2,7,3,1,0,0,3,5,10,0,2,-17,0,K. Smith Jr,2:21
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,8,H. Vanwijn,Hans,Vanwijn,10,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,H. Vanwijn,2:8
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,7,Ö. Ilyasoglu,Ömer Can,Ilyasoglu,13,0,,0,,,9:22,3,7,42,2,5,40,1,2,50,0,0,0,0,0,0,1,0,0,0,0,1,0,8,0,5,-2,2,Ö. Ilyasoglu,2:7
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,9,R. Badzim,Roko,Badzim,18,0,,0,,,21:48,2,6,33,2,5,40,0,1,0,0,0,0,3,1,4,2,1,0,0,1,1,2,6,0,0,-7,0,R. Badzim,2:9
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,12,M. Cazalon,Malcolm Jean Ahmed,Cazalon,21,1,,1,,,34:41,4,12,33,3,9,33,1,3,33,0,0,0,4,0,4,3,3,3,0,0,1,2,11,0,0,-15,2,M. Cazalon,2:12
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,10,J. Roberts,Joshua Artee,Roberts,23,0,,0,,,12:48,1,2,50,0,0,0,1,2,50,0,0,0,1,1,2,0,1,1,0,0,1,0,2,2,0,-13,2,J. Roberts,2:10
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,13,J. Hawkins,Javontae Aaron,Hawkins,31,0,1.0,1,,,24:06,5,9,55,2,4,50,3,5,60,1,2,50,2,0,2,0,0,2,0,0,3,3,13,2,2,9,4,J. Hawkins,2:13
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,5,M. Agva,Mahir,Agva,46,1,,1,,,22:32,3,6,50,0,0,0,3,6,50,0,0,0,2,1,3,2,3,0,0,0,4,0,6,0,2,-9,4,M. Agva,2:5
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,4,E. Paltaci,Erbey Kemal,Paltaci,77,0,,1,,,4:22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,0,E. Paltaci,2:4
+2,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,6,M. Tor,Murat Kagan,Tor,99,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Tor,2:6

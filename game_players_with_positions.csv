@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName
+1,TOFAS,TOF,67,Ö. Cengiz,Özgür,Cengiz,1,0,,0,,,9:23,1,1,100,0,0,0,1,1,100,0,0,0,0,0,0,0,0,0,0,0,3,0,2,0,0,5,0,Ö. Cengiz
+1,TOFAS,TOF,89,A. Perez,Alex Daniel,Perez,2,1,,1,,,30:37,2,8,25,0,2,0,2,6,33,0,1,0,2,0,2,7,3,0,0,0,1,5,4,0,0,-3,4,A. Perez
+1,TOFAS,TOF,66,Y. Saybir,Yigitcan,Saybir,3,1,,1,,,29:20,7,10,70,0,1,0,7,9,77,2,2,100,2,3,5,0,0,0,0,0,2,2,16,5,0,-3,14,Y. Saybir
+1,TOFAS,TOF,92,S. Whaley,Shaqwan Malic,Whaley,5,0,,0,,,14:42,0,1,0,0,0,0,0,1,0,1,2,50,4,1,5,1,1,0,0,0,2,1,1,1,0,0,0,S. Whaley
+1,TOFAS,TOF,57,E. Postel,Efe Evan,Postel,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Postel
+1,TOFAS,TOF,55,T. Geçim,Tolga,Geçim,8,0,1.0,1,,,27:30,1,2,50,1,2,50,0,0,0,2,2,100,4,0,4,10,1,1,0,0,3,3,5,0,0,-2,0,T. Geçim
+1,TOFAS,TOF,94,W. Kidd Jr,Warren Lynn,Kidd Jr,15,0,,0,,,12:24,5,7,71,0,0,0,5,7,71,4,6,66,2,2,4,0,0,1,0,0,1,3,14,1,2,0,8,W. Kidd Jr
+1,TOFAS,TOF,56,K. Efeoglu,Karahan Tuan,Efeoglu,16,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,K. Efeoglu
+1,TOFAS,TOF,91,M. Lewis Iii,Maxwell Robert ,Lewis Iii,21,1,,1,,,7:11,1,1,100,0,0,0,1,1,100,0,0,0,0,0,0,0,0,0,0,0,4,0,2,0,0,6,2,M. Lewis Iii
+1,TOFAS,TOF,88,M. Blazevic,Marek,Blazevic,22,1,,1,,,23:34,9,11,81,0,0,0,9,11,81,3,4,75,3,2,5,4,1,0,1,1,1,2,21,4,0,7,16,M. Blazevic
+1,TOFAS,TOF,90,H. Besson,Hugo Eric,Besson,25,0,,0,,,19:39,3,12,25,0,6,0,3,6,50,0,0,0,1,0,1,3,1,0,0,0,1,2,6,0,0,1,6,H. Besson
+1,TOFAS,TOF,93,J. Thomasson Jr,Joseph Elliotte,Thomasson Jr,32,1,,0,,,25:40,4,9,44,0,3,0,4,6,66,1,3,33,5,2,7,2,1,1,0,0,2,2,9,2,2,-1,8,J. Thomasson Jr
+2,FENERBAHÇE BEKO,FBB,99,A. Bacot Jr,Armando Linwood,Bacot Jr,00,1,,1,,,23:34,4,5,80,0,0,0,4,5,80,2,3,66,2,3,5,2,0,0,1,0,2,4,10,2,0,9,8,A. Bacot Jr
+2,FENERBAHÇE BEKO,FBB,77,J. Birsen,James Metecan,Birsen,1,1,,0,,,12:30,3,6,50,0,3,0,3,3,100,1,1,100,1,1,2,0,0,1,0,0,4,1,7,0,7,-5,4,J. Birsen
+2,FENERBAHÇE BEKO,FBB,92,N. Melli,Nicolo,Melli,4,0,,1,,,21:57,1,7,14,0,1,0,1,6,16,1,2,50,7,4,11,2,0,0,0,0,3,1,3,0,0,-11,2,N. Melli
+2,FENERBAHÇE BEKO,FBB,78,M. Eksioglu,Mert Emre,Eksioglu,5,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Eksioglu
+2,FENERBAHÇE BEKO,FBB,96,T. Tucker,Talen Jalee,Tucker,8,1,,1,,,24:19,9,16,56,2,6,33,7,10,70,4,6,66,2,2,4,7,3,1,0,0,4,5,24,5,8,6,14,T. Tucker
+2,FENERBAHÇE BEKO,FBB,80,D. Demir,Demircan,Demir,9,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D. Demir
+2,FENERBAHÇE BEKO,FBB,76,M. Mahmutoglu,Melih,Mahmutoglu,10,1,1.0,0,,,24:14,1,5,20,1,4,25,0,1,0,2,2,100,3,1,4,1,0,0,0,0,1,1,5,0,0,1,0,M. Mahmutoglu
+2,FENERBAHÇE BEKO,FBB,97,B. Boston Jr,Brandon Elliott,Boston Jr,11,0,,0,,,14:33,1,6,16,0,0,0,1,6,16,0,2,0,0,3,3,0,0,0,0,0,2,2,2,2,0,-1,2,B. Boston Jr
+2,FENERBAHÇE BEKO,FBB,89,O. Bitim,Onuralp,Bitim,17,0,,1,,,22:48,3,6,50,2,4,50,1,2,50,1,1,100,3,0,3,0,0,1,0,0,3,2,9,0,2,-4,2,O. Bitim
+2,FENERBAHÇE BEKO,FBB,95,D. Hall,Devon Howard,Hall,20,1,,1,,,28:08,5,12,41,0,5,0,5,7,71,0,0,0,0,1,1,4,2,0,0,0,0,2,10,4,0,0,8,D. Hall
+2,FENERBAHÇE BEKO,FBB,90,A. Zagars,Arturs Martins,Zagars,32,0,,0,,,5:04,0,2,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,-6,0,A. Zagars
+2,FENERBAHÇE BEKO,FBB,93,B. Colson Ii,Bonzie Alexander,Colson Ii,50,0,,0,,,22:53,3,9,33,1,3,33,2,6,33,1,2,50,3,2,5,0,2,2,0,1,0,1,8,1,0,1,4,B. Colson Ii

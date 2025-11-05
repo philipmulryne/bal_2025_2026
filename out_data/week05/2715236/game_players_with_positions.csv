@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,TRABZONSPOR,TRB,11,M. Reed,Marcquise Deandre,Reed,0,1,,1,,,28:59,9,15,60,0,3,0,9,12,75,5,5,100,3,1,4,7,2,1,0,2,2,5,23,0,4,-4,16,M. Reed,1:11
+1,TRABZONSPOR,TRB,14,D. Grant,Denove Octavon,Grant,1,0,,1,,,17:41,2,8,25,1,5,20,1,3,33,2,2,100,1,1,2,2,4,0,0,0,4,3,7,2,0,-4,2,D. Grant,1:14
+1,TRABZONSPOR,TRB,10,T. Tinkle,Tres Anthony,Tinkle,3,1,,0,,,17:14,3,5,60,0,2,0,3,3,100,2,2,100,2,1,3,0,0,0,0,0,1,1,8,2,0,-3,6,T. Tinkle,1:10
+1,TRABZONSPOR,TRB,4,I. Ulusoy,Ismail Cem,Ulusoy,5,1,1.0,0,,,18:29,0,4,0,0,1,0,0,3,0,0,0,0,1,0,1,4,1,3,0,0,2,3,0,0,0,-5,0,I. Ulusoy,1:4
+1,TRABZONSPOR,TRB,6,A. Güney,Alican,Güney,7,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Güney,1:6
+1,TRABZONSPOR,TRB,3,B. Demir,Berk,Demir,11,0,,1,,,22:29,4,6,66,3,5,60,1,1,100,0,0,0,4,0,4,2,1,0,1,0,3,0,11,0,3,-1,2,B. Demir,1:3
+1,TRABZONSPOR,TRB,5,O. Ulubay,Okben,Ulubay,13,1,,0,,,18:33,3,6,50,2,4,50,1,2,50,0,0,0,0,1,1,0,1,0,0,0,1,1,8,5,0,-1,2,O. Ulubay,1:5
+1,TRABZONSPOR,TRB,12,A. Yeboah,Akwasi Abeyie,Yeboah,15,0,,1,,,21:44,1,5,20,1,4,25,0,1,0,0,0,0,2,0,2,0,1,1,0,0,3,0,3,0,3,-9,0,A. Yeboah,1:12
+1,TRABZONSPOR,TRB,42,T. Taylor,Tony Christopher,Taylor,21,0,,0,,,14:51,1,4,25,0,1,0,1,3,33,0,0,0,1,0,1,2,0,1,0,0,2,1,2,0,0,-1,2,T. Taylor,1:42
+1,TRABZONSPOR,TRB,13,K. Silins,Karlis,Silins,25,0,,0,,,14:01,1,4,25,0,2,0,1,2,50,0,0,0,1,0,1,0,1,0,0,0,3,1,2,0,0,-6,2,K. Silins,1:13
+1,TRABZONSPOR,TRB,1,D. Engindeniz,Dorukhan,Engindeniz,30,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D. Engindeniz,1:1
+1,TRABZONSPOR,TRB,9,A. Delgado Astacio,Angel Luis,Delgado Astacio,31,1,,1,,,25:59,3,6,50,0,0,0,3,6,50,4,6,66,4,2,6,2,0,0,0,1,4,6,10,2,2,-1,6,A. Delgado Astacio,1:9
+2,ANADOLU EFES,EFS,72,R. Beaubois,Rodrigue,Beaubois,1,0,1.0,0,,,14:22,0,5,0,0,3,0,0,2,0,2,4,50,0,0,0,1,2,0,1,0,4,2,2,0,0,11,0,R. Beaubois,2:72
+2,ANADOLU EFES,EFS,81,S. Hazer,Sehmus,Hazer,2,1,,1,,,28:05,7,9,77,1,1,100,6,8,75,4,6,66,5,1,6,6,3,4,0,1,2,6,19,0,8,5,10,S. Hazer,2:81
+2,ANADOLU EFES,EFS,92,J. Loyd,Jordan ,Loyd,3,1,,1,,,24:14,3,5,60,2,3,66,1,2,50,0,0,0,1,0,1,1,2,1,1,0,1,2,8,0,2,4,0,J. Loyd,2:92
+2,ANADOLU EFES,EFS,45,R. Fenemen,Rüzgar,Fenemen,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,R. Fenemen,2:45
+2,ANADOLU EFES,EFS,86,R. Smits,Rolands,Smits,11,0,,1,,,25:38,3,5,60,1,2,50,2,3,66,1,2,50,5,1,6,0,1,1,0,0,3,1,8,4,0,12,4,R. Smits,2:86
+2,ANADOLU EFES,EFS,73,B. Dessert,Brice ,Dessert,13,1,,0,,,14:58,2,2,100,0,0,0,2,2,100,0,4,0,0,0,0,0,1,0,0,0,2,3,4,0,2,0,4,B. Dessert,2:73
+2,ANADOLU EFES,EFS,74,P. Dozier ,Pj,Dozier ,15,0,,1,,,25:33,5,12,41,0,5,0,5,7,71,3,4,75,5,1,6,3,1,0,0,0,2,4,13,0,0,5,4,P. Dozier ,2:74
+2,ANADOLU EFES,EFS,71,B. Yildizli,Burak Can,Yildizli,19,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,B. Yildizli,2:71
+2,ANADOLU EFES,EFS,75,C. Swider,Cole ,Swider,21,1,,0,,,18:45,2,7,28,2,6,33,0,1,0,5,5,100,3,0,3,0,0,0,0,0,0,3,11,0,6,0,0,C. Swider,2:75
+2,ANADOLU EFES,EFS,82,S. Mutaf,Sarper David,Mutaf,23,0,,0,,,10:56,1,2,50,1,2,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,-2,0,S. Mutaf,2:82
+2,ANADOLU EFES,EFS,80,E. Yilmaz,Erkan,Yilmaz,33,1,,1,,,22:14,2,3,66,0,0,0,2,3,66,2,4,50,4,2,6,3,1,2,0,0,3,3,6,2,0,1,4,E. Yilmaz,2:80
+2,ANADOLU EFES,EFS,91,K. Jones,Kai ,Jones,88,0,,0,,,15:15,3,3,100,0,0,0,3,3,100,1,1,100,2,1,3,2,1,0,1,0,4,1,7,0,3,-1,6,K. Jones,2:91

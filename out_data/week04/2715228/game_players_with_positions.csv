@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,BURSASPOR BASKETBOL,BUR,133,B. Childress,Brandon Reginald,Childress,0,1,,1,,,29:12,5,10,50,2,5,40,3,5,60,3,3,100,0,1,1,6,1,3,0,0,2,5,15,0,2,13,4,B. Childress,1:133
+1,BURSASPOR BASKETBOL,BUR,3,T. Akdamar,Tevfik,Akdamar,3,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akdamar,1:3
+1,BURSASPOR BASKETBOL,BUR,144,M. Parsons,Malik Disjohn,Parsons,5,1,,1,,,24:38,7,12,58,0,2,0,7,10,70,2,3,66,1,1,2,2,4,1,0,2,4,3,16,0,6,-1,6,M. Parsons,1:144
+1,BURSASPOR BASKETBOL,BUR,101,H. Köksal,Hüseyin Göksenin,Köksal,7,1,1.0,0,,,16:49,1,2,50,0,1,0,1,1,100,0,0,0,1,0,1,1,1,1,0,1,3,0,2,0,0,2,2,H. Köksal,1:101
+1,BURSASPOR BASKETBOL,BUR,126,B. Satir,Bora,Satir,10,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,B. Satir,1:126
+1,BURSASPOR BASKETBOL,BUR,102,B. Akin,Berk Can,Akin,11,0,,1,,,22:03,5,8,62,3,5,60,2,3,66,0,0,0,1,0,1,1,0,2,0,0,4,0,13,0,4,11,4,B. Akin,1:102
+1,BURSASPOR BASKETBOL,BUR,136,J. Delaurier,Javin Que,Delaurier,12,0,,0,,,10:48,1,2,50,0,0,0,1,2,50,3,4,75,3,0,3,0,1,0,1,0,0,3,5,0,0,10,2,J. Delaurier,1:136
+1,BURSASPOR BASKETBOL,BUR,129,B. Crawford,Bryant Dejuan,Crawford,13,0,,0,,,15:36,5,11,45,1,7,14,4,4,100,0,1,0,0,0,0,4,2,2,0,0,4,3,11,0,7,12,6,B. Crawford,1:129
+1,BURSASPOR BASKETBOL,BUR,4,Y. Onar,Yesukan,Onar,14,0,,0,,,6:24,1,1,100,0,0,0,1,1,100,1,1,100,0,0,0,0,1,1,1,0,2,1,3,0,0,3,2,Y. Onar,1:4
+1,BURSASPOR BASKETBOL,BUR,134,V. King,Vincent Earl,King,22,0,,0,,,19:35,3,9,33,0,1,0,3,8,37,0,0,0,5,2,7,0,0,0,0,0,1,0,6,4,0,18,6,V. King,1:134
+1,BURSASPOR BASKETBOL,BUR,135,A. Konontsuk,Artur,Konontsuk,34,1,,1,,,25:43,2,5,40,1,3,33,1,2,50,0,0,0,4,0,4,1,0,2,0,1,2,1,5,0,3,2,2,A. Konontsuk,1:135
+1,BURSASPOR BASKETBOL,BUR,127,L. Nnoko,Landry,Nnoko,35,1,,1,,,29:12,4,10,40,0,0,0,4,10,40,0,0,0,7,7,14,3,1,1,2,1,2,1,8,6,0,5,8,L. Nnoko,1:127
+2,GLINT MANISA BASKET,MNS,32,J. Scrubb,Jayden Amari,Scrubb,1,0,,0,,,22:33,3,5,60,0,1,0,3,4,75,0,0,0,5,0,5,1,2,0,2,0,2,1,6,0,0,-10,6,J. Scrubb,2:32
+2,GLINT MANISA BASKET,MNS,31,D. Smith,Dayshon Hassan,Smith,2,1,1.0,0,,,25:03,2,7,28,0,4,0,2,3,66,2,2,100,3,0,3,7,2,3,0,0,2,6,6,0,2,-16,4,D. Smith,2:31
+2,GLINT MANISA BASKET,MNS,23,B. Eryurtlu,Batu,Eryurtlu,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,B. Eryurtlu,2:23
+2,GLINT MANISA BASKET,MNS,24,Y. Onan,Yigit,Onan,7,1,,1,,,31:05,3,7,42,0,2,0,3,5,60,3,6,50,3,2,5,3,2,0,0,0,3,3,9,2,3,-9,6,Y. Onan,2:24
+2,GLINT MANISA BASKET,MNS,15,I. Yilmaz,Ibrahim Ethem,Yilmaz,9,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,I. Yilmaz,2:15
+2,GLINT MANISA BASKET,MNS,33,J. Mintz,Judah Jah Leone,Mintz,10,1,,1,,,29:39,3,7,42,0,1,0,3,6,50,10,11,90,1,1,2,0,2,1,0,0,1,7,16,0,4,-5,4,J. Mintz,2:33
+2,GLINT MANISA BASKET,MNS,22,B. Çal,Bugra,Çal,11,0,,0,,,8:55,1,2,50,0,1,0,1,1,100,1,2,50,2,0,2,0,0,1,0,0,2,1,3,0,0,-6,2,B. Çal,2:22
+2,GLINT MANISA BASKET,MNS,27,M. Yerkazanoglu,Mustafa Faruk,Yerkazanoglu,12,0,,1,,,12:18,1,1,100,0,0,0,1,1,100,0,0,0,1,1,2,0,0,0,2,0,2,0,2,2,0,-6,2,M. Yerkazanoglu,2:27
+2,GLINT MANISA BASKET,MNS,34,K. Zemaitis,Kristupas,Zemaitis,13,0,,1,,,25:18,1,6,16,1,3,33,0,3,0,0,0,0,1,0,1,3,3,2,0,1,1,3,3,0,0,-9,0,K. Zemaitis,2:34
+2,GLINT MANISA BASKET,MNS,29,E. Mobley,Eric Isaiah,Mobley,15,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Mobley,2:29
+2,GLINT MANISA BASKET,MNS,16,A. Çamoglu,Altan,Çamoglu,21,1,,1,,,17:27,4,7,57,1,2,50,3,5,60,2,2,100,1,1,2,2,1,0,0,1,2,1,11,0,2,-5,6,A. Çamoglu,2:16
+2,GLINT MANISA BASKET,MNS,28,J. Johnson,Jayce Ryback,Johnson,34,1,,0,,,27:42,5,9,55,0,0,0,5,9,55,3,4,75,5,3,8,1,3,1,1,2,2,2,13,0,0,-9,10,J. Johnson,2:28

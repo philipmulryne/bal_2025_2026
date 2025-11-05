@@ -1,0 +1,22 @@
+{
+  "week": "week01",
+  "game_id": "2736922",
+  "label": "ANADOLU EFES vs ESENLER EROKSPOR",
+  "teams": [
+    "ANADOLU EFES",
+    "ESENLER EROKSPOR"
+  ],
+  "created_at": "2025-10-28T16:59:16.473071Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week01/2736922.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

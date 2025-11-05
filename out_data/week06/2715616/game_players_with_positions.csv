@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,BURSASPOR BASKETBOL,BUR,133,B. Childress,Brandon Reginald,Childress,0,1,,1,,,31:01,8,13,61,2,4,50,6,9,66,2,2,100,2,0,2,6,5,3,1,0,1,5,20,0,5,-3,8,B. Childress,1:133
+1,BURSASPOR BASKETBOL,BUR,3,T. Akdamar,Tevfik,Akdamar,3,0,1.0,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akdamar,1:3
+1,BURSASPOR BASKETBOL,BUR,144,M. Parsons,Malik Disjohn,Parsons,5,0,,1,,,28:54,6,9,66,2,3,66,4,6,66,3,4,75,2,0,2,3,3,2,0,0,3,3,17,0,9,6,8,M. Parsons,1:144
+1,BURSASPOR BASKETBOL,BUR,126,B. Satir,Bora,Satir,10,0,,0,,,3:21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-1,0,B. Satir,1:126
+1,BURSASPOR BASKETBOL,BUR,102,B. Akin,Berk Can,Akin,11,1,,1,,,21:32,1,5,20,1,3,33,0,2,0,0,0,0,7,0,7,3,2,2,0,0,3,1,3,0,0,-2,0,B. Akin,1:102
+1,BURSASPOR BASKETBOL,BUR,136,J. Delaurier,Javin Que,Delaurier,12,0,,0,,,12:19,1,2,50,0,1,0,1,1,100,0,0,0,3,1,4,1,1,0,0,0,2,0,2,0,0,5,2,J. Delaurier,1:136
+1,BURSASPOR BASKETBOL,BUR,129,B. Crawford,Bryant Dejuan,Crawford,13,0,,0,,,17:06,1,5,20,0,3,0,1,2,50,3,3,100,2,0,2,1,0,0,0,0,1,1,5,0,0,-15,2,B. Crawford,1:129
+1,BURSASPOR BASKETBOL,BUR,4,Y. Onar,Yesukan,Onar,14,0,,0,,,15:07,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,4,0,0,0,0,1,0,Y. Onar,1:4
+1,BURSASPOR BASKETBOL,BUR,104,M. Paçaci,Mete,Paçaci,16,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Paçaci,1:104
+1,BURSASPOR BASKETBOL,BUR,134,V. King,Vincent Earl,King,22,1,,0,,,18:06,2,5,40,0,1,0,2,4,50,2,4,50,1,1,2,0,1,0,0,0,2,3,6,2,4,9,4,V. King,1:134
+1,BURSASPOR BASKETBOL,BUR,135,A. Konontsuk,Artur,Konontsuk,34,1,,1,,,24:53,4,5,80,1,1,100,3,4,75,0,0,0,2,1,3,1,3,1,0,0,1,4,9,2,2,-3,6,A. Konontsuk,1:135
+1,BURSASPOR BASKETBOL,BUR,127,L. Nnoko,Landry,Nnoko,35,1,,1,,,27:41,6,11,54,0,0,0,6,11,54,1,3,33,4,3,7,0,1,0,2,0,2,4,13,2,0,-7,12,L. Nnoko,1:127
+2,BAHÇEŞEHİR KOLEJİ,BSK,76,C. Homesley,Caleb Allen,Homesley,5,1,,1,,,29:10,2,8,25,1,4,25,1,4,25,3,4,75,3,1,4,3,4,0,0,0,2,3,8,3,2,5,2,C. Homesley,2:76
+2,BAHÇEŞEHİR KOLEJİ,BSK,78,B. Koprivica,Balsa,Koprivica,8,0,,0,,,5:19,0,1,0,0,0,0,0,1,0,0,0,0,0,2,2,0,2,0,0,0,1,0,0,0,0,-1,0,B. Koprivica,2:78
+2,BAHÇEŞEHİR KOLEJİ,BSK,65,C. Coskun,Cengiz Sarp,Coskun,10,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,C. Coskun,2:65
+2,BAHÇEŞEHİR KOLEJİ,BSK,77,M. Mitchell Ii,Matthew Antonio,Mitchell Ii,11,0,,1,,,21:27,2,5,40,0,1,0,2,4,50,0,0,0,4,1,5,1,0,1,0,0,3,4,4,0,2,9,2,M. Mitchell Ii,2:77
+2,BAHÇEŞEHİR KOLEJİ,BSK,64,F. Haltali,Furkan,Haltali,14,0,,0,,,5:48,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,1,1,0,0,0,1,1,0,0,0,0,0,F. Haltali,2:64
+2,BAHÇEŞEHİR KOLEJİ,BSK,81,M. Flynn,Malachi Emmanuel,Flynn,22,1,,1,,,32:10,12,19,63,7,10,70,5,9,55,5,5,100,3,1,4,5,3,3,0,0,2,2,36,6,5,7,6,M. Flynn,2:81
+2,BAHÇEŞEHİR KOLEJİ,BSK,1,I. Akpinar,Ismet,Akpinar,33,1,,0,,,16:17,1,3,33,1,3,33,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,0,3,0,0,-2,0,I. Akpinar,2:1
+2,BAHÇEŞEHİR KOLEJİ,BSK,75,T. Cavanaugh,Tyler Robert,Cavanaugh,34,1,1.0,0,,,21:09,2,3,66,0,1,0,2,2,100,4,4,100,2,2,4,1,0,0,0,0,3,3,8,4,0,-4,4,T. Cavanaugh,2:75
+2,BAHÇEŞEHİR KOLEJİ,BSK,80,T. Williams,Trevion Lamon,Williams,50,1,,1,,,28:53,5,10,50,0,0,0,5,10,50,2,4,50,5,1,6,1,2,3,0,2,3,6,12,2,0,3,8,T. Williams,2:80
+2,BAHÇEŞEHİR KOLEJİ,BSK,62,K. Sipahi,Kenan,Sipahi,55,0,,1,,,19:55,1,7,14,1,2,50,0,5,0,0,0,0,0,0,0,1,1,0,0,1,3,1,3,3,0,2,0,K. Sipahi,2:62
+2,BAHÇEŞEHİR KOLEJİ,BSK,3,G. Bas,Göktug,Bas,57,0,,0,,,5:02,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-5,0,G. Bas,2:3
+2,BAHÇEŞEHİR KOLEJİ,BSK,79,H. Hale,Hunter Jelaun,Hale,77,0,,0,,,14:50,1,5,20,1,4,25,0,1,0,0,0,0,2,0,2,0,1,0,0,0,0,0,3,0,0,-4,0,H. Hale,2:79

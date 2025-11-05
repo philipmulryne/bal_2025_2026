@@ -1,0 +1,22 @@
+{
+  "week": "week05",
+  "game_id": "2736926",
+  "label": "GALATASARAY MCT TECHNIC vs KARSIYAKA",
+  "teams": [
+    "GALATASARAY MCT TECHNIC",
+    "KARSIYAKA"
+  ],
+  "created_at": "2025-10-28T18:51:28.196070Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week05/2736926.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

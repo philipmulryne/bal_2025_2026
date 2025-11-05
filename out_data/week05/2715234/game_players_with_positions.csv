@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,BESIKTAS GAIN,BJK,70,J. Mathews,Jonah Kenneth,Mathews,0,1,,0,,,29:41,3,12,25,2,4,50,1,8,12,2,2,100,4,1,5,3,1,3,0,2,2,5,10,0,2,7,0,J. Mathews,1:70
+1,BESIKTAS GAIN,BJK,71,D. Dotson,Devon Durrell,Dotson,1,1,,0,,,20:47,8,11,72,2,2,100,6,9,66,3,3,100,1,0,1,3,2,1,0,0,4,2,21,0,7,23,12,D. Dotson,1:71
+1,BESIKTAS GAIN,BJK,72,I. Kamagate,Ismael Sindou,Kamagate,4,0,,0,,,22:26,4,5,80,0,0,0,4,5,80,7,8,87,4,2,6,0,2,0,3,0,2,5,15,2,2,16,8,I. Kamagate,1:72
+1,BESIKTAS GAIN,BJK,74,Y. Arslan,Yigit,Arslan,7,1,1.0,0,,,27:01,3,10,30,1,4,25,2,6,33,0,0,0,1,2,3,2,0,1,0,1,2,2,7,0,0,18,2,Y. Arslan,1:74
+1,BESIKTAS GAIN,BJK,69,C. Morgan,Conor Seamus William,Morgan,9,1,,0,,,20:02,2,4,50,1,3,33,1,1,100,3,3,100,3,0,3,2,0,1,1,0,4,2,8,0,0,9,2,C. Morgan,1:69
+1,BESIKTAS GAIN,BJK,66,B. Lemar,Brynton Jevon,Lemar,11,0,,1,,,15:46,0,3,0,0,3,0,0,0,0,1,2,50,1,0,1,3,2,0,0,0,2,3,1,0,0,-5,0,B. Lemar,1:66
+1,BESIKTAS GAIN,BJK,76,C. Kus,Canberk,Kus,12,0,,1,,,12:10,2,3,66,2,3,66,0,0,0,0,0,0,5,1,6,0,2,0,0,0,2,0,6,0,0,-3,0,C. Kus,1:76
+1,BESIKTAS GAIN,BJK,77,A. Özbek,Ahmet Ata,Özbek,13,0,,1,,,1:10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-3,0,A. Özbek,1:77
+1,BESIKTAS GAIN,BJK,3,Y. Çoban,Yigit,Çoban,15,0,,1,,,1:26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-3,0,Y. Çoban,1:3
+1,BESIKTAS GAIN,BJK,1,E. Adigüzel,Emir,Adigüzel,19,0,,1,,,6:19,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,1,0,E. Adigüzel,1:1
+1,BESIKTAS GAIN,BJK,67,A. Brown,Anthony Lejohn,Brown,21,0,,0,,,19:21,3,7,42,1,3,33,2,4,50,0,0,0,4,0,4,4,1,1,0,0,1,2,7,0,0,16,0,A. Brown,1:67
+1,BESIKTAS GAIN,BJK,68,V. Brown,Vittorio,Brown,33,1,,0,,,23:52,4,7,57,3,5,60,1,2,50,2,3,66,3,2,5,1,0,0,0,0,1,3,13,0,0,14,2,V. Brown,1:68
+2,BURSASPOR BASKETBOL,BUR,133,B. Childress,Brandon Reginald,Childress,0,1,,0,,,28:59,4,10,40,0,3,0,4,7,57,6,6,100,2,0,2,7,2,1,0,0,2,8,14,0,2,-28,8,B. Childress,2:133
+2,BURSASPOR BASKETBOL,BUR,3,T. Akdamar,Tevfik,Akdamar,3,0,1.0,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akdamar,2:3
+2,BURSASPOR BASKETBOL,BUR,144,M. Parsons,Malik Disjohn,Parsons,5,1,,1,,,30:26,5,7,71,1,2,50,4,5,80,5,6,83,2,0,2,3,2,1,0,0,3,4,16,0,3,-6,8,M. Parsons,2:144
+2,BURSASPOR BASKETBOL,BUR,126,B. Satir,Bora,Satir,10,0,,1,,,1:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,B. Satir,2:126
+2,BURSASPOR BASKETBOL,BUR,102,B. Akin,Berk Can,Akin,11,1,,0,,,24:11,2,7,28,0,3,0,2,4,50,0,0,0,5,0,5,1,3,1,1,1,5,0,4,0,2,-5,4,B. Akin,2:102
+2,BURSASPOR BASKETBOL,BUR,136,J. Delaurier,Javin Que,Delaurier,12,0,,0,,,15:21,3,4,75,0,0,0,3,4,75,1,4,25,3,2,5,0,2,0,1,0,4,2,7,4,0,6,6,J. Delaurier,2:136
+2,BURSASPOR BASKETBOL,BUR,129,B. Crawford,Bryant Dejuan,Crawford,13,0,,1,,,20:12,3,7,42,1,2,50,2,5,40,2,4,50,1,0,1,6,2,0,1,1,3,2,9,0,3,0,2,B. Crawford,2:129
+2,BURSASPOR BASKETBOL,BUR,4,Y. Onar,Yesukan,Onar,14,0,,1,,,15:19,1,2,50,0,0,0,1,2,50,0,0,0,4,1,5,1,1,2,0,0,1,0,2,2,0,-13,2,Y. Onar,2:4
+2,BURSASPOR BASKETBOL,BUR,104,M. Paçaci,Mete,Paçaci,16,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Paçaci,2:104
+2,BURSASPOR BASKETBOL,BUR,134,V. King,Vincent Earl,King,22,0,,0,,,17:58,1,2,50,1,2,50,0,0,0,2,4,50,0,1,1,0,1,1,0,0,1,2,5,0,0,-20,0,V. King,2:134
+2,BURSASPOR BASKETBOL,BUR,135,A. Konontsuk,Artur,Konontsuk,34,1,,1,,,22:25,2,7,28,2,4,50,0,3,0,0,0,0,3,0,3,0,1,0,0,0,4,0,6,0,3,4,0,A. Konontsuk,2:135
+2,BURSASPOR BASKETBOL,BUR,127,L. Nnoko,Landry,Nnoko,35,1,,0,,,23:29,2,5,40,0,0,0,2,5,40,3,4,75,5,1,6,0,0,0,0,2,1,6,7,0,0,-27,4,L. Nnoko,2:127

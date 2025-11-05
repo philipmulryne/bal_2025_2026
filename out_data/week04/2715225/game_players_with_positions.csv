@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,MERSIN SPOR,MSK,55,A. Olaseni,Abodunrin Gabriel,Olaseni,0,1,,0,,,30:48,2,5,40,0,0,0,2,5,40,5,6,83,4,2,6,1,3,1,1,1,3,4,9,3,0,6,4,A. Olaseni,1:55
+1,MERSIN SPOR,MSK,5,J. Cobbs,Justin,Cobbs,1,1,,1,,,26:26,6,9,66,4,7,57,2,2,100,2,2,100,0,1,1,2,2,1,0,0,3,4,18,0,0,1,0,J. Cobbs,1:5
+1,MERSIN SPOR,MSK,3,K. Özmizrak,Kartal,Özmizrak,3,0,,0,,,10:08,2,2,100,2,2,100,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,6,0,0,-2,0,K. Özmizrak,1:3
+1,MERSIN SPOR,MSK,10,R. March Jr,Ronald Eugene,March Jr,4,1,,1,,,12:19,0,2,0,0,2,0,0,0,0,1,2,50,2,1,3,0,2,1,0,0,0,1,1,1,0,-7,0,R. March Jr,1:10
+1,MERSIN SPOR,MSK,8,L. Apaydin,Leon Harun,Apaydin,5,1,,0,,,5:05,1,3,33,0,2,0,1,1,100,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,2,-5,2,L. Apaydin,1:8
+1,MERSIN SPOR,MSK,56,A. Cowan,Anthony Dewayne,Cowan,7,0,,1,,,21:48,5,8,62,4,7,57,1,1,100,7,9,77,2,0,2,6,3,2,0,0,2,5,21,0,3,15,2,A. Cowan,1:56
+1,MERSIN SPOR,MSK,6,F. Cruz Saldivar,Francisco Javier,Cruz Saldivar,9,0,1.0,0,,,20:22,2,10,20,0,5,0,2,5,40,0,0,0,1,1,2,2,4,1,0,0,0,0,4,0,0,-5,2,F. Cruz Saldivar,1:6
+1,MERSIN SPOR,MSK,4,E. Tirpanci,Efe Ergi,Tirpanci,10,0,,1,,,24:47,1,6,16,0,3,0,1,3,33,2,2,100,5,1,6,2,0,2,0,0,3,1,4,2,2,11,2,E. Tirpanci,1:4
+1,MERSIN SPOR,MSK,53,A. Alyanak,Anil,Alyanak,11,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Alyanak,1:53
+1,MERSIN SPOR,MSK,2,M. Kiliçli,Mükremin Deniz,Kiliçli,13,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Kiliçli,1:2
+1,MERSIN SPOR,MSK,9,J. White,Jackson Thomas,White,14,1,,1,,,35:53,3,6,50,1,2,50,2,4,50,0,0,0,2,4,6,2,0,2,1,0,3,0,7,5,2,8,4,J. White,1:9
+1,MERSIN SPOR,MSK,7,B. Bentil,Benjamin,Bentil,50,0,,0,,,12:24,2,11,18,1,6,16,1,5,20,7,8,87,0,1,1,0,0,0,0,1,3,4,12,0,0,-2,2,B. Bentil,1:7
+2,TOFAS,TOF,67,Ö. Cengiz,Özgür,Cengiz,1,0,,0,,,11:16,2,3,66,1,2,50,1,1,100,1,2,50,0,0,0,0,0,3,0,0,2,1,6,0,2,2,2,Ö. Cengiz,2:67
+2,TOFAS,TOF,89,A. Perez,Alex Daniel,Perez,2,1,,1,,,28:13,5,10,50,2,6,33,3,4,75,3,3,100,2,0,2,5,3,3,0,0,2,4,15,0,2,-6,6,A. Perez,2:89
+2,TOFAS,TOF,66,Y. Saybir,Yigitcan,Saybir,3,1,,1,,,27:21,4,8,50,0,2,0,4,6,66,2,2,100,3,2,5,2,2,0,1,0,2,2,10,4,0,-3,8,Y. Saybir,2:66
+2,TOFAS,TOF,92,S. Whaley,Shaqwan Malic,Whaley,5,0,,1,,,14:54,3,8,37,1,4,25,2,4,50,0,0,0,1,2,3,0,0,0,1,1,2,0,7,2,0,0,4,S. Whaley,2:92
+2,TOFAS,TOF,57,E. Postel,Efe Evan,Postel,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Postel,2:57
+2,TOFAS,TOF,55,T. Geçim,Tolga,Geçim,8,0,1.0,0,,,20:04,2,7,28,0,1,0,2,6,33,3,4,75,2,1,3,2,3,0,0,0,1,3,7,2,2,-6,4,T. Geçim,2:55
+2,TOFAS,TOF,94,W. Kidd Jr,Warren Lynn,Kidd Jr,15,0,,0,,,9:59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,-1,0,W. Kidd Jr,2:94
+2,TOFAS,TOF,56,K. Efeoglu,Karahan Tuan,Efeoglu,16,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,K. Efeoglu,2:56
+2,TOFAS,TOF,91,M. Lewis Iii,Maxwell Robert ,Lewis Iii,21,1,,1,,,15:44,4,6,66,0,1,0,4,5,80,0,0,0,2,0,2,0,1,0,0,0,0,0,8,0,0,-2,6,M. Lewis Iii,2:91
+2,TOFAS,TOF,88,M. Blazevic,Marek,Blazevic,22,1,,0,,,27:46,5,5,100,0,0,0,5,5,100,2,6,33,4,6,10,2,2,1,0,0,2,7,12,7,0,-4,6,M. Blazevic,2:88
+2,TOFAS,TOF,90,H. Besson,Hugo Eric,Besson,25,0,,1,,,25:42,5,11,45,1,5,20,4,6,66,2,2,100,6,0,6,3,2,1,0,1,3,1,13,0,6,-1,6,H. Besson,2:90
+2,TOFAS,TOF,93,J. Thomasson Jr,Joseph Elliotte,Thomasson Jr,32,1,,0,,,19:01,1,6,16,0,2,0,1,4,25,0,0,0,3,0,3,2,1,1,0,0,1,1,2,0,0,1,0,J. Thomasson Jr,2:93

@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,ANADOLU EFES,EFS,81,S. Hazer,Sehmus,Hazer,2,0,,1,,,27:26,6,7,85,1,2,50,5,5,100,3,6,50,2,0,2,3,1,1,0,0,3,5,16,2,9,5,10,S. Hazer,1:81
+1,ANADOLU EFES,EFS,92,J. Loyd,Jordan,Loyd,3,0,,0,,,21:08,1,7,14,0,4,0,1,3,33,2,3,66,6,0,6,1,2,0,0,0,2,3,4,0,3,0,2,J. Loyd,1:92
+1,ANADOLU EFES,EFS,45,R. Fenemen,Rüzgar,Fenemen,6,0,,1,,,1:28,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,0,R. Fenemen,1:45
+1,ANADOLU EFES,EFS,87,N. Weiler-Babb,Nick,Weiler-Babb,8,1,,0,,,25:56,1,3,33,0,2,0,1,1,100,0,0,0,4,0,4,8,3,1,0,0,1,0,2,0,0,9,2,N. Weiler-Babb,1:87
+1,ANADOLU EFES,EFS,85,G. Papagiannis,Georgios,Papagiannis,9,0,,0,,,17:49,3,4,75,0,1,0,3,3,100,2,2,100,1,1,2,5,2,0,1,0,4,1,8,2,0,3,6,G. Papagiannis,1:85
+1,ANADOLU EFES,EFS,88,I. Cordinier,Isaia,Cordinier,10,1,,1,,,26:58,6,10,60,2,4,50,4,6,66,2,2,100,4,3,7,6,6,0,1,1,4,4,16,3,4,18,6,I. Cordinier,1:88
+1,ANADOLU EFES,EFS,86,R. Smits,Rolands,Smits,11,0,,1,,,15:48,2,5,40,0,0,0,2,5,40,3,4,75,2,4,6,0,0,0,0,0,1,2,7,2,0,1,4,R. Smits,1:86
+1,ANADOLU EFES,EFS,73,B. Dessert,Brice,Dessert,13,1,,0,,,14:58,4,4,100,0,0,0,4,4,100,3,4,75,6,0,6,1,0,0,1,0,1,3,11,0,0,12,8,B. Dessert,1:73
+1,ANADOLU EFES,EFS,71,B. Yildizli,Burak Can,Yildizli,19,0,1.0,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,B. Yildizli,1:71
+1,ANADOLU EFES,EFS,75,C. Swider,Cole,Swider,21,0,,0,,,8:51,3,5,60,2,3,66,1,2,50,0,0,0,0,0,0,0,0,0,0,0,2,0,8,3,0,3,2,C. Swider,1:75
+1,ANADOLU EFES,EFS,89,E. Osmani,Ercan,Osmani,24,1,,1,,,22:35,4,8,50,2,6,33,2,2,100,4,4,100,5,2,7,2,0,0,0,0,0,2,14,2,2,9,4,E. Osmani,1:89
+1,ANADOLU EFES,EFS,80,E. Yilmaz,Erkan,Yilmaz,33,1,,0,,,17:04,2,5,40,0,3,0,2,2,100,0,0,0,1,0,1,1,0,1,0,0,2,0,4,0,2,12,4,E. Yilmaz,1:80
+2,ESENLER EROKSPOR,ERK,26,J. Crawford,Jordon Benjamin,Crawford,1,1,1.0,1,,,26:42,4,14,28,2,8,25,2,6,33,7,7,100,2,1,3,5,2,1,0,1,1,5,17,0,3,-12,2,J. Crawford,2:26
+2,ESENLER EROKSPOR,ERK,18,O. Yilmaz,Ozan,Yilmaz,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,O. Yilmaz,2:18
+2,ESENLER EROKSPOR,ERK,21,E. Gazi,Erten,Gazi,7,0,,1,,,7:34,0,3,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,5,0,E. Gazi,2:21
+2,ESENLER EROKSPOR,ERK,25,L. Galloway,Langston Arnold ,Galloway,9,1,,0,,,22:21,4,11,36,2,6,33,2,5,40,0,0,0,4,1,5,1,1,1,0,1,1,0,10,2,2,-21,4,L. Galloway,2:25
+2,ESENLER EROKSPOR,ERK,27,J. Simmons,Jeremy Byron Jerome,Simmons,11,1,,0,,,18:52,3,4,75,0,0,0,3,4,75,0,0,0,1,0,1,0,0,1,1,0,2,1,6,0,2,-9,4,J. Simmons,2:27
+2,ESENLER EROKSPOR,ERK,24,P. Cornelie,Petr  Willlam,Cornelie,12,1,,0,,,11:01,1,6,16,0,3,0,1,3,33,1,2,50,0,2,2,0,0,1,0,0,2,3,3,3,2,-4,2,P. Cornelie,2:24
+2,ESENLER EROKSPOR,ERK,15,T. Akyazili,Thomas,Akyazili,14,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akyazili,2:15
+2,ESENLER EROKSPOR,ERK,22,T. Thurman,Tre'shawn Marcel,Thurman,15,0,,1,,,24:05,3,4,75,1,2,50,2,2,100,2,4,50,2,0,2,2,2,0,0,0,3,3,9,0,2,-13,4,T. Thurman,2:22
+2,ESENLER EROKSPOR,ERK,20,E. Arna,Egehan,Arna,18,1,,1,,,33:54,2,8,25,1,4,25,1,4,25,0,0,0,3,2,5,3,0,1,0,0,3,2,5,0,0,-6,2,E. Arna,2:20
+2,ESENLER EROKSPOR,ERK,28,J. Love,Jermaine,Love,22,0,,0,,,30:24,7,12,58,0,2,0,7,10,70,7,9,77,3,1,4,3,3,4,0,0,3,6,21,2,0,-5,6,J. Love,2:28
+2,ESENLER EROKSPOR,ERK,23,J. Gant,Jakeenan Tyelle ,Gant,23,0,,1,,,16:55,1,6,16,1,5,20,0,1,0,0,0,0,1,1,2,0,2,1,0,1,2,0,3,0,3,1,0,J. Gant,2:23
+2,ESENLER EROKSPOR,ERK,17,M. Akyel,Metehan,Akyel,41,0,,0,,,8:13,1,1,100,0,0,0,1,1,100,0,0,0,1,3,4,0,0,0,0,0,3,0,2,0,0,-6,2,M. Akyel,2:17

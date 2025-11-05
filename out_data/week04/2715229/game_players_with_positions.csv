@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,3,E. Tanisan,Emre,Tanisan,0,0,,0,,,1:59,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-7,0,E. Tanisan,1:3
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,11,S. Griffin,Samuel Gevaris,Griffin,1,0,,1,,,26:04,7,18,38,3,8,37,4,10,40,10,10,100,1,0,1,1,2,2,0,0,1,4,27,0,5,4,8,S. Griffin,1:11
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,21,K. Smith Jr,Kenneth Jerome,Smith Jr,4,1,,1,,,31:24,9,11,81,7,8,87,2,3,66,0,0,0,2,0,2,4,3,0,0,0,3,2,25,5,3,11,2,K. Smith Jr,1:21
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,8,H. Vanwijn,Hans,Vanwijn,10,1,,1,,,35:31,2,5,40,0,1,0,2,4,50,0,0,0,9,6,15,5,0,1,0,0,1,1,4,0,0,8,4,H. Vanwijn,1:8
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,7,Ö. Ilyasoglu,Ömer Can,Ilyasoglu,13,0,,0,,,9:52,2,3,66,2,3,66,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,6,3,3,-1,0,Ö. Ilyasoglu,1:7
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,9,R. Badzim,Roko,Badzim,18,0,,0,,,13:03,2,4,50,0,2,0,2,2,100,0,0,0,1,0,1,1,0,0,0,0,2,2,4,0,2,-6,4,R. Badzim,1:9
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,12,M. Cazalon,Malcolm Jean Ahmed,Cazalon,21,1,,0,,,16:57,2,5,40,1,4,25,1,1,100,2,2,100,1,0,1,1,0,0,0,0,1,3,7,0,0,11,0,M. Cazalon,1:12
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,2,A. Engin,Ata,Engin,22,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Engin,1:2
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,79,A. Omic,Alen,Omic,24,0,,0,,,10:49,2,3,66,0,0,0,2,3,66,0,0,0,1,2,3,0,1,0,0,0,0,1,4,2,0,-7,4,A. Omic,1:79
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,13,J. Hawkins,Javontae Aaron,Hawkins,31,1,1.0,1,,,25:10,2,5,40,0,3,0,2,2,100,0,0,0,4,1,5,0,1,0,0,1,3,0,4,0,0,16,4,J. Hawkins,1:13
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,5,M. Agva,Mahir,Agva,46,1,,1,,,29:07,1,8,12,1,3,33,0,5,0,0,0,0,4,3,7,1,2,0,0,0,3,1,3,0,0,13,0,M. Agva,1:5
+1,YUKATEL MERKEZEFENDI BELEDIYESI BASKET,YMB,4,E. Paltaci,Erbey Kemal,Paltaci,77,0,,0,,,0:04,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,E. Paltaci,1:4
+2,TRABZONSPOR,TRB,11,M. Reed,Marcquise Deandre,Reed,0,1,,1,,,34:56,4,14,28,0,4,0,4,10,40,1,2,50,4,0,4,7,3,3,0,0,2,2,9,0,6,-3,8,M. Reed,2:11
+2,TRABZONSPOR,TRB,14,D. Grant,Denove Octavon,Grant,1,1,,1,,,27:27,5,15,33,2,8,25,3,7,42,7,7,100,6,3,9,3,1,0,0,0,1,5,19,5,0,-13,0,D. Grant,2:14
+2,TRABZONSPOR,TRB,10,T. Tinkle,Tres Anthony,Tinkle,3,0,,0,,,20:16,4,8,50,1,3,33,3,5,60,2,3,66,2,3,5,3,0,0,0,0,2,3,11,0,5,1,6,T. Tinkle,2:10
+2,TRABZONSPOR,TRB,4,I. Ulusoy,Ismail Cem,Ulusoy,5,0,1.0,0,,,11:49,2,5,40,1,1,100,1,4,25,0,0,0,1,0,1,2,0,1,0,0,0,1,5,0,2,4,2,I. Ulusoy,2:4
+2,TRABZONSPOR,TRB,7,J. Gordon,Jitaurious Tykyvion,Gordon,8,0,,0,,,5:48,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,-6,0,J. Gordon,2:7
+2,TRABZONSPOR,TRB,3,B. Demir,Berk,Demir,11,1,,0,,,12:56,1,2,50,0,1,0,1,1,100,0,0,0,1,2,3,1,0,0,0,0,1,0,2,0,2,-4,2,B. Demir,2:3
+2,TRABZONSPOR,TRB,5,O. Ulubay,Okben,Ulubay,13,0,,1,,,24:55,6,9,66,3,5,60,3,4,75,0,0,0,2,0,2,2,0,0,1,0,3,0,15,0,2,-9,4,O. Ulubay,2:5
+2,TRABZONSPOR,TRB,12,A. Yeboah,Akwasi Abeyie,Yeboah,15,1,,1,,,21:53,1,3,33,0,2,0,1,1,100,0,0,0,1,0,1,1,0,1,0,0,4,1,2,0,0,-6,2,A. Yeboah,2:12
+2,TRABZONSPOR,TRB,2,E. Arar,Ege,Arar,19,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Arar,2:2
+2,TRABZONSPOR,TRB,13,K. Silins,Karlis,Silins,25,0,,0,,,12:29,1,2,50,0,1,0,1,1,100,2,2,100,1,1,2,1,0,0,0,0,1,1,4,2,0,5,2,K. Silins,2:13
+2,TRABZONSPOR,TRB,1,D. Engindeniz,Dorukhan,Engindeniz,30,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D. Engindeniz,2:1
+2,TRABZONSPOR,TRB,9,A. Delgado Astacio,Angel Luis,Delgado Astacio,31,1,,1,,,27:31,3,6,50,0,0,0,3,6,50,2,4,50,0,1,1,0,0,2,0,0,1,3,8,0,2,-14,6,A. Delgado Astacio,2:9

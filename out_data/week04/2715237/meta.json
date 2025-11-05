@@ -1,0 +1,22 @@
+{
+  "week": "week04",
+  "game_id": "2715237",
+  "label": "FENERBAHÇE BEKO vs TÜRK TELEKOM ",
+  "teams": [
+    "FENERBAHÇE BEKO",
+    "TÜRK TELEKOM "
+  ],
+  "created_at": "2025-10-28T18:34:30.577655Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week04/2715237.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

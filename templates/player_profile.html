@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ name }} – Game Log</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <style>
+    .wrap{max-width:1000px;margin:20px auto;padding:0 14px;}
+    .nowrap{white-space:nowrap}
+    .hdr{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 14px;}
+    .title{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+    h1{font-size:22px;margin:0}
+    .chip{border:1px solid var(--border);padding:2px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .actions{display:flex;gap:8px}
+    .btn{border:1px solid var(--border);background:var(--panel);color:var(--text);
+         padding:8px 10px;border-radius:10px;text-decoration:none}
+    .btn-group{display:flex;gap:6px;flex-wrap:wrap}
+    .btn-sm{padding:6px 8px;border-radius:8px;font-size:12px}
+    .btn.active{border-color:#92b7ff;background:#0f1a30}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:12px}
+    .hint{font-size:12px;color:var(--muted);margin:4px 0 10px}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th, td{border:1px solid var(--border);padding:6px 8px}
+    th{background:#0f1a30;text-align:left}
+    tr:nth-child(odd) td{background:var(--row-alt)}
+    .avg-wrap{margin-top:14px}
+    .avg-head{display:flex;align-items:baseline;gap:8px;margin:0 0 8px}
+    .avg-grid{
+      display:grid;
+      grid-template-columns: repeat(6, minmax(90px,1fr));
+      gap:6px;
+    }
+    .avg-item{border:1px solid var(--border);background:var(--panel);border-radius:8px;padding:6px 8px}
+    .avg-item .k{font-size:11px;color:var(--muted)}
+    .avg-item .v{font-size:14px;font-weight:700;margin-top:2px}
+  </style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="starfield"></div>
+  <div class="wrap">
+    <div class="hdr">
+      <div class="title">
+        <h1>{{ name }}</h1>
+        {% if team %}<span class="chip">{{ team }}</span>{% endif %}
+        <span class="muted">Game Log</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/players/">← Back to Players</a>
+        <a class="btn" href="?player={{ q_player }}&team={{ q_team }}{% if q_wlo is not none %}&wlo={{ q_wlo }}{% endif %}{% if q_whi is not none %}&whi={{ q_whi }}{% endif %}&download=1">Download CSV</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hint">
+        Tip: filter by week with
+        <code>?player={{ q_player }}&team={{ q_team }}&wlo=1&whi=6</code>
+        — “Season” scope respects the current week slice.
+      </div>
+
+      <!-- Scope switchers -->
+      <div class="btn-group" style="margin-bottom:8px">
+        {% set baseqs = "player=" ~ q_player ~ "&team=" ~ q_team ~ (("&wlo=" ~ q_wlo) if q_wlo is not none else "") ~ (("&whi=" ~ q_whi) if q_whi is not none else "") %}
+        <a class="btn btn-sm {% if q_scope=='last5' %}active{% endif %}" href="?{{ baseqs }}&scope=last5">Last 5</a>
+        <a class="btn btn-sm {% if q_scope=='last10' %}active{% endif %}" href="?{{ baseqs }}&scope=last10">Last 10</a>
+        <a class="btn btn-sm {% if q_scope in ['season', '', None] %}active{% endif %}" href="?{{ baseqs }}&scope=season">Season</a>
+      </div>
+
+      {{ table_html|safe }}
+
+      <!-- Averages -->
+      <div class="avg-wrap">
+        {{ averages_html|safe }}
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+  <div class="hdr" style="margin:0 0 8px;justify-content:space-between">
+    <div class="title"><h1 style="font-size:18px">Scoring Style</h1>
+      <span class="muted" style="margin-left:8px">share of points in current scope</span>
+    </div>
+  </div>
+  {{ scoring_style_html|safe }}
+</div>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+{
+  "week": "week01",
+  "games": [
+    {
+      "week": "week01",
+      "game_id": "2714805",
+      "label": "ALIAGA PETKIM SPOR vs KARSIYAKA",
+      "teams": [
+        "ALIAGA PETKIM SPOR",
+        "KARSIYAKA"
+      ],
+      "created_at": "2025-10-08T12:11:20.141796Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2714805.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2714806",
+      "label": "TOFAS vs FENERBAHÇE BEKO",
+      "teams": [
+        "TOFAS",
+        "FENERBAHÇE BEKO"
+      ],
+      "created_at": "2025-10-08T12:11:21.447533Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2714806.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2714807",
+      "label": "BAHÇESEHIR KOLEJI vs GALATASARAY MCT TECHNIC",
+      "teams": [
+        "BAHÇESEHIR KOLEJI",
+        "GALATASARAY MCT TECHNIC"
+      ],
+      "created_at": "2025-10-08T12:11:22.655058Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2714807.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2715206",
+      "label": "BESIKTAS GAIN vs TÜRK TELEKOM",
+      "teams": [
+        "BESIKTAS GAIN",
+        "TÜRK TELEKOM"
+      ],
+      "created_at": "2025-10-08T12:11:24.095406Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2715206.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2715207",
+      "label": "MANISA BASKET vs MERSIN SPOR",
+      "teams": [
+        "MANISA BASKET",
+        "MERSIN SPOR"
+      ],
+      "created_at": "2025-10-08T12:11:25.433584Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2715207.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2715208",
+      "label": "TRABZONSPOR vs ONVO BÜYÜKÇEKMECE BASKETBOL",
+      "teams": [
+        "TRABZONSPOR",
+        "ONVO BÜYÜKÇEKMECE BASKETBOL"
+      ],
+      "created_at": "2025-10-08T12:11:26.655049Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2715208.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2715209",
+      "label": "YUKATEL MERKEZEFENDI BELEDIYESI BASKET vs BURSASPOR BASKETBOL",
+      "teams": [
+        "YUKATEL MERKEZEFENDI BELEDIYESI BASKET",
+        "BURSASPOR BASKETBOL"
+      ],
+      "created_at": "2025-10-08T12:11:27.861819Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2715209.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    },
+    {
+      "week": "week01",
+      "game_id": "2736922",
+      "label": "ANADOLU EFES vs ESENLER EROKSPOR",
+      "teams": [
+        "ANADOLU EFES",
+        "ESENLER EROKSPOR"
+      ],
+      "created_at": "2025-10-08T12:11:29.120338Z",
+      "source_json": "/Users/philipmulryne/JSON/BSL/BSL_2025_26/week01/2736922.json",
+      "files": {
+        "pbp": "game_pbp_normalized.csv",
+        "pos": "game_possessions.csv",
+        "team_pm": "game_team_pm.csv",
+        "stints": "game_stints.csv",
+        "stints_pm": "game_stints_pm.csv",
+        "matchups": "game_lineup_matchups.csv",
+        "players": "game_players_with_positions.csv",
+        "pos_lookup": "game_player_positions_lookup.csv"
+      }
+    }
+  ],
+  "generated_at": "2025-10-08T12:11:29.122418Z"
+}

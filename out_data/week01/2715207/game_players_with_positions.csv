@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,MANISA BASKET,MNS,31,J. Scrubb,Jayden Amari,Scrubb,1,1,,0,,,17:37,1,5,20,0,3,0,1,2,50,0,0,0,1,1,2,2,1,2,0,0,3,2,2,0,0,-22,2,J. Scrubb,1:31
+1,MANISA BASKET,MNS,30,D. Smith,Dayshon Hassan,Smith,2,0,1.0,1,,,27:60,1,5,20,0,3,0,1,2,50,9,9,100,2,0,2,4,3,2,0,0,1,4,11,0,5,-14,2,D. Smith,1:30
+1,MANISA BASKET,MNS,22,B. Eryurtlu,Batu,Eryurtlu,6,0,,1,,,5:33,0,1,0,0,1,0,0,0,0,1,2,50,1,0,1,0,0,0,0,0,0,1,1,0,0,-2,0,B. Eryurtlu,1:22
+1,MANISA BASKET,MNS,23,Y. Onan,Yigit,Onan,7,0,,0,,,27:16,4,10,40,1,2,50,3,8,37,1,2,50,5,1,6,0,1,1,0,1,4,3,10,2,2,-6,6,Y. Onan,1:23
+1,MANISA BASKET,MNS,32,J. Mintz,Judah Jah Leone,Mintz,10,1,,0,,,24:01,3,12,25,1,3,33,2,9,22,2,5,40,0,0,0,1,2,0,0,1,2,4,9,0,0,-11,2,J. Mintz,1:32
+1,MANISA BASKET,MNS,21,B. Çal,Bugra,Çal,11,1,,0,,,11:13,2,5,40,0,2,0,2,3,66,0,0,0,0,0,0,0,1,0,2,0,1,0,4,0,2,-10,4,B. Çal,1:21
+1,MANISA BASKET,MNS,26,M. Yerkazanoglu,Mustafa Faruk,Yerkazanoglu,12,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Yerkazanoglu,1:26
+1,MANISA BASKET,MNS,33,K. Zemaitis,Kristupas,Zemaitis,13,1,,1,,,26:25,2,3,66,0,1,0,2,2,100,0,0,0,3,0,3,2,1,0,0,0,0,2,4,0,0,-15,2,K. Zemaitis,1:33
+1,MANISA BASKET,MNS,28,E. Mobley,Eric Isaiah,Mobley,15,1,,0,,,22:46,4,8,50,0,2,0,4,6,66,2,2,100,2,3,5,1,0,2,0,0,2,1,10,4,0,-12,8,E. Mobley,1:28
+1,MANISA BASKET,MNS,15,A. Çamoglu,Altan,Çamoglu,21,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Çamoglu,1:15
+1,MANISA BASKET,MNS,27,J. Johnson,Jayce Ryback,Johnson,34,0,,1,,,17:03,2,7,28,0,0,0,2,7,28,2,4,50,4,4,8,0,1,0,0,1,1,3,6,5,0,-9,4,J. Johnson,1:27
+1,MANISA BASKET,MNS,29,J. Cardoso Pereira,Joao Marcello,Cardoso Pereira,45,0,,1,,,20:06,5,10,50,0,2,0,5,8,62,1,2,50,3,2,5,1,1,1,5,0,2,1,11,4,7,6,10,J. Cardoso Pereira,1:29
+2,MERSIN SPOR,MSK,55,A. Olaseni,Abodunrin Gabriel,Olaseni,0,0,,1,,,20:24,2,7,28,0,0,0,2,7,28,0,2,0,4,2,6,1,1,2,1,3,2,2,4,2,0,3,2,A. Olaseni,2:55
+2,MERSIN SPOR,MSK,5,J. Cobbs,Justin,Cobbs,1,0,,0,,,17:14,1,6,16,0,2,0,1,4,25,2,2,100,2,0,2,3,1,2,0,1,1,1,4,0,0,11,2,J. Cobbs,2:5
+2,MERSIN SPOR,MSK,3,K. Özmizrak,Kartal,Özmizrak,3,0,,0,,,12:40,2,4,50,2,4,50,0,0,0,2,2,100,1,0,1,2,0,0,0,0,3,1,8,0,0,4,0,K. Özmizrak,2:3
+2,MERSIN SPOR,MSK,10,R. March Jr,Ronald Eugene,March Jr,4,0,,1,,,20:24,6,7,85,4,5,80,2,2,100,0,0,0,4,0,4,0,1,1,1,0,1,0,16,0,2,11,4,R. March Jr,2:10
+2,MERSIN SPOR,MSK,8,L. Apaydin,Leon Harun,Apaydin,5,0,,1,,,3:28,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,L. Apaydin,2:8
+2,MERSIN SPOR,MSK,56,A. Cowan,Anthony Dewayne,Cowan,7,1,,1,,,25:35,4,7,57,2,4,50,2,3,66,4,5,80,2,0,2,7,2,0,0,0,2,5,14,2,2,9,4,A. Cowan,2:56
+2,MERSIN SPOR,MSK,1,H. Sayili,Hakan,Sayili,8,0,,1,,,11:40,1,3,33,0,1,0,1,2,50,0,0,0,2,2,4,1,1,0,0,1,1,1,2,2,0,8,2,H. Sayili,2:1
+2,MERSIN SPOR,MSK,6,F. Cruz Saldivar,Francisco Javier,Cruz Saldivar,9,1,1.0,0,,,23:35,6,11,54,3,7,42,3,4,75,0,0,0,4,1,5,5,3,0,0,0,3,1,15,0,2,12,6,F. Cruz Saldivar,2:6
+2,MERSIN SPOR,MSK,4,E. Tirpanci,Efe Ergi,Tirpanci,10,1,,0,,,17:15,2,4,50,1,3,33,1,1,100,0,0,0,1,1,2,0,1,0,0,0,1,0,5,0,2,9,2,E. Tirpanci,2:4
+2,MERSIN SPOR,MSK,2,M. Kiliçli,Mükremin Deniz,Kiliçli,13,0,,0,,,2:07,0,2,0,0,0,0,0,2,0,0,0,0,2,0,2,0,0,0,0,1,1,0,0,0,0,1,0,M. Kiliçli,2:2
+2,MERSIN SPOR,MSK,9,J. White,Jackson Thomas,White,14,1,,0,,,25:34,4,5,80,0,0,0,4,5,80,0,0,0,4,2,6,1,0,4,1,1,2,2,8,0,0,17,8,J. White,2:9
+2,MERSIN SPOR,MSK,7,B. Bentil,Benjamin,Bentil,50,1,,0,,,20:04,3,7,42,1,2,50,2,5,40,4,4,100,3,0,3,1,3,0,0,0,4,3,11,0,2,11,4,B. Bentil,2:7

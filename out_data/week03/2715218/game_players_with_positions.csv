@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,TOFAS,TOF,67,Ö. Cengiz,Özgür,Cengiz,1,0,,0,,,10:49,1,2,50,0,0,0,1,2,50,0,0,0,3,0,3,1,0,0,0,0,2,1,2,0,0,-8,2,Ö. Cengiz,1:67
+1,TOFAS,TOF,89,A. Perez,Alex Daniel,Perez,2,1,,1,,,29:11,2,6,33,1,1,100,1,5,20,0,0,0,2,1,3,7,3,2,0,0,2,1,5,0,2,20,2,A. Perez,1:89
+1,TOFAS,TOF,66,Y. Saybir,Yigitcan,Saybir,3,1,,1,,,27:41,6,12,50,1,5,20,5,7,71,3,4,75,5,2,7,5,1,1,0,0,1,4,16,3,9,23,10,Y. Saybir,1:66
+1,TOFAS,TOF,92,S. Whaley,Shaqwan Malic,Whaley,5,0,,0,,,15:11,3,5,60,0,1,0,3,4,75,0,0,0,5,1,6,3,1,0,1,0,0,0,6,0,0,-4,6,S. Whaley,1:92
+1,TOFAS,TOF,57,E. Postel,Efe Evan,Postel,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Postel,1:57
+1,TOFAS,TOF,55,T. Geçim,Tolga,Geçim,8,0,1.0,0,,,18:55,1,3,33,1,2,50,0,1,0,0,0,0,1,0,1,2,4,0,0,1,1,2,3,0,3,-10,0,T. Geçim,1:55
+1,TOFAS,TOF,94,W. Kidd Jr,Warren Lynn,Kidd Jr,15,0,,1,,,11:17,5,5,100,0,0,0,5,5,100,0,0,0,0,0,0,0,1,0,0,0,1,0,10,0,4,-10,10,W. Kidd Jr,1:94
+1,TOFAS,TOF,56,K. Efeoglu,Karahan Tuan,Efeoglu,16,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,K. Efeoglu,1:56
+1,TOFAS,TOF,91,M. Lewis Iii,Maxwell Robert ,Lewis Iii,21,1,,1,,,20:50,5,10,50,2,4,50,3,6,50,0,0,0,8,0,8,2,0,1,0,0,2,0,12,0,5,23,6,M. Lewis Iii,1:91
+1,TOFAS,TOF,88,M. Blazevic,Marek,Blazevic,22,1,,0,,,25:51,9,12,75,0,0,0,9,12,75,3,6,50,2,3,5,0,1,1,0,1,3,6,21,6,6,15,16,M. Blazevic,1:88
+1,TOFAS,TOF,90,H. Besson,Hugo Eric,Besson,25,0,,0,,,13:05,1,2,50,0,0,0,1,2,50,0,0,0,2,0,2,1,3,0,1,0,3,0,2,0,2,-9,2,H. Besson,1:90
+1,TOFAS,TOF,93,J. Thomasson Jr,Joseph Elliotte,Thomasson Jr,32,1,,1,,,27:10,2,6,33,0,4,0,2,2,100,4,4,100,2,1,3,9,1,1,0,0,2,3,8,0,4,20,4,J. Thomasson Jr,1:93
+2,TÜRK TELEKOM ,TTK,75,K. Allman,Kyle Lindsay,Allman,1,0,,1,,,27:58,6,17,35,0,4,0,6,13,46,2,4,50,1,1,2,2,2,1,0,0,3,5,14,2,4,-5,10,K. Allman,2:75
+2,TÜRK TELEKOM ,TTK,4,M. Tekçevik,Mete,Tekçevik,2,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Tekçevik,2:4
+2,TÜRK TELEKOM ,TTK,7,B. Durmaz,Berkan,Durmaz,3,0,,0,,,25:55,4,9,44,4,7,57,0,2,0,0,0,0,7,0,7,2,0,1,0,1,5,2,12,6,3,0,0,B. Durmaz,2:7
+2,TÜRK TELEKOM ,TTK,6,E. Kosut,Emircan,Kosut,5,1,,1,,,6:53,1,1,100,0,0,0,1,1,100,0,0,0,0,0,0,0,1,0,1,0,1,0,2,0,0,-6,2,E. Kosut,2:6
+2,TÜRK TELEKOM ,TTK,3,A. Kahraman,Ata,Kahraman,6,0,,0,,,11:40,1,3,33,1,3,33,0,0,0,0,0,0,1,0,1,1,0,0,1,0,2,0,3,0,0,-1,0,A. Kahraman,2:3
+2,TÜRK TELEKOM ,TTK,74,J. Usher,Jordan Emanuel ,Usher,8,1,,1,,,25:32,1,8,12,1,3,33,0,5,0,5,8,62,3,1,4,4,1,3,0,0,2,5,8,0,3,-18,0,J. Usher,2:74
+2,TÜRK TELEKOM ,TTK,77,J. Smith,Jaleen Devon,Smith,9,1,,1,,,30:52,4,11,36,1,3,33,3,8,37,2,2,100,2,1,3,6,2,2,0,0,0,1,11,0,2,-20,2,J. Smith,2:77
+2,TÜRK TELEKOM ,TTK,76,M. Simonovic,Marko,Simonovic,11,1,,0,,,15:33,1,2,50,0,0,0,1,2,50,0,0,0,1,0,1,0,0,1,0,0,2,0,2,0,2,-14,2,M. Simonovic,2:76
+2,TÜRK TELEKOM ,TTK,71,A. Biçer,Atakan Murat,Biçer,15,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Biçer,2:71
+2,TÜRK TELEKOM ,TTK,5,D. Özdemiroglu,Dogus,Özdemiroglu,18,1,1.0,0,,,24:18,3,8,37,2,5,40,1,3,33,1,2,50,4,0,4,5,4,1,0,1,1,4,9,0,0,1,0,D. Özdemiroglu,2:5
+2,TÜRK TELEKOM ,TTK,8,Y. Gültekin,Yavuz,Gültekin,19,0,,0,,,3:07,0,2,0,0,0,0,0,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,-1,0,Y. Gültekin,2:8
+2,TÜRK TELEKOM ,TTK,78,K. Bankston,Kristeon Lamar,Bankston,30,0,,1,,,28:12,6,6,100,0,0,0,6,6,100,0,0,0,1,2,3,2,1,1,0,0,1,0,12,0,6,4,12,K. Bankston,2:78

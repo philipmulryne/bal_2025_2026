@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analytics Hub</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="starfield"></div>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Analytics Hub</h1>
+          <div class="subtitle">Dashboards for lineups, assists, shots & shooting analytics</div>
+          <div class="subtitle">Dash version: <code>{{ dash_version }}</code></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="theme-toggle" title="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="icon">
+            <path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 8a4 4 0 100 8 4 4 0 000-8z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Theme
+        </button>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <path d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input id="search" class="search" placeholder="Search dashboards (press / to focus)…" />
+      <span class="kbd">/</span>
+    </div>
+
+    <div class="grid" id="grid">
+      {% for it in items %}
+        <a class="card" href="{{ it.endpoint }}" data-name="{{ it.name|lower }} {{ it.desc|lower }}">
+          {% if it.shortcut %}
+          <span class="shortcut">{{ it.shortcut }}</span>
+          {% endif %}
+          <span class="chip {{ 'ok' if it.ok else 'err' }}">{{ 'Mounted' if it.ok else 'Failed' }}</span>
+          <div class="emoji">{{ it.emoji }}</div>
+          <h3>{{ it.name }}</h3>
+          <p>{{ it.desc }}</p>
+          {% if it.error and not it.ok %}
+            <div class="spacer"></div>
+            <div class="muted" style="font-size:12px;">{{ it.error }}</div>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+
+    <div class="meta">
+      <div class="panel">
+        <h4>Environment</h4>
+        <div class="kv"><span>DATA_ROOT</span><code>{{ data_root }}</code></div>
+        <div class="kv"><span>Apps</span><strong>{{ items|length }}</strong></div>
+        <div class="kv"><span>Mounted</span><strong>{{ items|selectattr('ok')|list|length }}</strong></div>
+      </div>
+      <div class="panel">
+        <h4>Data Health</h4>
+        {% if health.found %}
+          <div class="kv"><span><code>pbp_all.csv</code></span><strong>Found ✅</strong></div>
+          <div class="kv"><span>Size</span><strong>{{ health.size_kb }} KB</strong></div>
+          <div class="kv" style="overflow:hidden; text-overflow:ellipsis;"><span>Path</span><code title="{{ health.path }}">{{ health.path }}</code></div>
+        {% else %}
+          <div class="kv"><span><code>pbp_all.csv</code></span><strong style="color:var(--danger)">Not found</strong></div>
+          <div class="kv"><span>Where we look</span><code>{{ data_root }}/(pbp_all.csv or _cumulative/)</code></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

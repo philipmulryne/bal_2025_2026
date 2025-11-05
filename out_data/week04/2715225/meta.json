@@ -1,0 +1,22 @@
+{
+  "week": "week04",
+  "game_id": "2715225",
+  "label": "MERSIN SPOR vs TOFAS",
+  "teams": [
+    "MERSIN SPOR",
+    "TOFAS"
+  ],
+  "created_at": "2025-10-28T18:32:53.921816Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week04/2715225.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

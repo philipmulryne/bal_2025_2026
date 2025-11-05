@@ -1,0 +1,22 @@
+{
+  "week": "week06",
+  "game_id": "2715618",
+  "label": "KARŞIYAKA vs TRABZONSPOR",
+  "teams": [
+    "KARŞIYAKA",
+    "TRABZONSPOR"
+  ],
+  "created_at": "2025-11-02T14:58:11.648599Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week06/2715618.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

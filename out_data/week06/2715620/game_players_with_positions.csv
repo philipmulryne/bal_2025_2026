@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,TÜRK TELEKOM,TTK,80,M. Devoe,Michael Jaden,Devoe,0,1,,1,,,24:46,4,7,57,0,2,0,4,5,80,4,4,100,4,1,5,0,0,2,0,0,2,2,12,2,4,1,6,M. Devoe,1:80
+1,TÜRK TELEKOM,TTK,75,K. Allman,Kyle Lindsay,Allman,1,0,,1,,,19:38,6,12,50,1,3,33,5,9,55,6,9,66,3,0,3,3,0,0,1,1,3,5,19,2,0,7,8,K. Allman,1:75
+1,TÜRK TELEKOM,TTK,7,B. Durmaz,Berkan,Durmaz,3,1,,1,,,16:39,2,5,40,2,5,40,0,0,0,2,4,50,3,0,3,0,0,0,0,0,1,3,8,0,0,8,0,B. Durmaz,1:7
+1,TÜRK TELEKOM,TTK,6,E. Kosut,Emircan,Kosut,5,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Kosut,1:6
+1,TÜRK TELEKOM,TTK,3,A. Kahraman,Ata,Kahraman,6,0,,0,,,4:53,1,2,50,0,1,0,1,1,100,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,2,1,0,A. Kahraman,1:3
+1,TÜRK TELEKOM,TTK,87,K. Alexander,Kyle John Solomon,Alexander,7,1,,1,,,29:17,2,5,40,0,1,0,2,4,50,3,4,75,4,2,6,0,0,1,1,0,4,2,7,2,0,-1,4,K. Alexander,1:87
+1,TÜRK TELEKOM,TTK,74,J. Usher,Jordan Emanuel ,Usher,8,0,,0,,,13:11,1,2,50,0,0,0,1,2,50,2,3,66,1,0,1,1,2,1,0,1,2,3,4,0,3,-6,2,J. Usher,1:74
+1,TÜRK TELEKOM,TTK,77,J. Smith,Jaleen Devon,Smith,9,1,,1,,,32:25,2,7,28,2,6,33,0,1,0,4,4,100,0,1,1,4,3,2,0,1,1,1,10,0,3,9,0,J. Smith,1:77
+1,TÜRK TELEKOM,TTK,76,M. Simonovic,Marko,Simonovic,11,0,,0,,,18:54,3,7,42,3,5,60,0,2,0,0,0,0,1,0,1,1,0,1,1,0,2,0,9,3,0,-4,0,M. Simonovic,1:76
+1,TÜRK TELEKOM,TTK,5,D. Özdemiroglu,Dogus,Özdemiroglu,18,1,1.0,0,,,26:01,2,7,28,1,3,33,1,4,25,5,6,83,1,3,4,2,2,1,0,0,3,6,10,2,0,-6,2,D. Özdemiroglu,1:5
+1,TÜRK TELEKOM,TTK,8,Y. Gültekin,Yavuz,Gültekin,19,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Y. Gültekin,1:8
+1,TÜRK TELEKOM,TTK,78,K. Bankston,Kristeon Lamar,Bankston,30,0,,0,,,14:16,1,1,100,0,0,0,1,1,100,0,0,0,1,0,1,0,3,0,0,0,1,2,2,0,0,1,2,K. Bankston,1:78
+2,GALATASARAY MCT TECHNIC,GSM,106,J. Robinson Jr,Jerome Emanuel,Robinson Jr,1,1,,0,,,27:04,2,10,20,0,3,0,2,7,28,2,2,100,2,3,5,1,1,1,1,1,2,2,6,0,4,0,4,J. Robinson Jr,2:106
+2,GALATASARAY MCT TECHNIC,GSM,101,T. Görener,Tibet Deniz,Görener,5,0,,0,,,6:19,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,-4,0,T. Görener,2:101
+2,GALATASARAY MCT TECHNIC,GSM,109,W. Cummings,William,Cummings,7,0,1.0,1,,,29:34,5,10,50,0,1,0,5,9,55,3,5,60,2,4,6,10,5,1,0,0,4,6,13,2,1,10,10,W. Cummings,2:109
+2,GALATASARAY MCT TECHNIC,GSM,71,C. Korkmaz,Can,Korkmaz,8,1,,0,,,5:42,0,3,0,0,2,0,0,1,0,0,0,0,1,0,1,2,0,0,0,0,1,2,0,0,0,0,0,C. Korkmaz,2:71
+2,GALATASARAY MCT TECHNIC,GSM,107,R. Meeks,Robinson Jr,Meeks,9,0,,1,,,8:42,2,2,100,1,1,100,1,1,100,0,0,0,0,0,0,0,0,1,0,0,0,0,5,3,0,0,0,R. Meeks,2:107
+2,GALATASARAY MCT TECHNIC,GSM,70,R. Öncel,Ridvan,Öncel,10,0,,0,,,6:08,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,1,0,0,0,3,0,R. Öncel,2:70
+2,GALATASARAY MCT TECHNIC,GSM,103,J. Palmer Jr,James Alfred,Palmer Jr,12,1,,1,,,35:55,9,19,47,4,11,36,5,8,62,0,1,0,7,1,8,6,1,0,1,0,2,3,22,2,0,-5,4,J. Palmer Jr,2:103
+2,GALATASARAY MCT TECHNIC,GSM,108,C. Bishop,Christian Angelo ,Bishop,13,0,,0,,,12:49,3,4,75,0,0,0,3,4,75,1,2,50,3,1,4,0,0,0,0,1,2,1,7,2,0,-9,6,C. Bishop,2:108
+2,GALATASARAY MCT TECHNIC,GSM,38,A. Tuncer,Ahmet Bugrahan,Tuncer,19,0,,1,,,9:19,0,2,0,0,2,0,0,0,0,2,2,100,0,0,0,0,2,0,0,0,2,1,2,0,0,-10,0,A. Tuncer,2:38
+2,GALATASARAY MCT TECHNIC,GSM,105,F. Gillespie Ii,Frederick Maurice ,Gillespie Ii,33,1,,0,,,14:56,2,2,100,0,0,0,2,2,100,0,1,0,2,0,2,0,2,1,0,0,4,1,4,0,0,-1,4,F. Gillespie Ii,2:105
+2,GALATASARAY MCT TECHNIC,GSM,104,F. White Jr,Fabian Christopher,White Jr,35,1,,1,,,30:24,5,10,50,2,3,66,3,7,42,2,2,100,6,5,11,1,2,1,0,1,3,1,14,2,5,-2,4,F. White Jr,2:104
+2,GALATASARAY MCT TECHNIC,GSM,99,M. Yasar,Muhsin,Yasar,77,0,,0,,,13:09,4,5,80,0,0,0,4,5,80,0,0,0,4,1,5,0,2,2,0,0,2,1,8,2,0,8,4,M. Yasar,2:99

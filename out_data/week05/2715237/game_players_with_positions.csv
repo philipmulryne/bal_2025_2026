@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,FENERBAHÇE BEKO,FBB,99,A. Bacot Jr,Armando Linwood,Bacot Jr,00,1,,1,,,19:38,2,4,50,0,0,0,2,4,50,5,5,100,2,1,3,2,0,1,1,0,3,4,9,2,0,6,4,A. Bacot Jr,1:99
+1,FENERBAHÇE BEKO,FBB,77,J. Birsen,James Metecan,Birsen,1,0,,1,,,21:28,4,5,80,2,3,66,2,2,100,2,2,100,4,0,4,1,1,0,0,0,4,2,12,0,0,-2,2,J. Birsen,1:77
+1,FENERBAHÇE BEKO,FBB,100,S. Vilbekin,Scott Jordan,Vilbekin,3,0,,0,,,17:22,3,6,50,3,6,50,0,0,0,0,0,0,1,0,1,3,0,1,0,0,1,0,9,0,3,2,0,S. Vilbekin,1:100
+1,FENERBAHÇE BEKO,FBB,92,N. Melli,Nicolo,Melli,4,0,,0,,,11:01,1,1,100,1,1,100,0,0,0,0,0,0,3,1,4,1,0,0,0,0,2,0,3,3,0,2,0,N. Melli,1:92
+1,FENERBAHÇE BEKO,FBB,78,M. Eksioglu,Mert Emre,Eksioglu,5,0,,0,,,10:56,1,4,25,1,1,100,0,3,0,0,0,0,1,1,2,1,2,0,0,0,1,1,3,0,0,8,0,M. Eksioglu,1:78
+1,FENERBAHÇE BEKO,FBB,96,T. Tucker,Talen Jalee,Tucker,8,0,,0,,,15:40,4,7,57,1,3,33,3,4,75,2,4,50,1,0,1,4,3,1,1,0,2,2,11,0,2,4,6,T. Tucker,1:96
+1,FENERBAHÇE BEKO,FBB,76,M. Mahmutoglu,Melih,Mahmutoglu,10,1,1.0,1,,,15:13,2,5,40,1,2,50,1,3,33,0,0,0,1,0,1,1,2,0,0,0,2,1,5,0,0,0,2,M. Mahmutoglu,1:76
+1,FENERBAHÇE BEKO,FBB,79,T. Biberoviç,Tarik,Biberoviç,13,1,,1,,,25:07,5,7,71,3,4,75,2,3,66,1,1,100,4,0,4,2,3,0,0,0,2,2,14,6,0,7,0,T. Biberoviç,1:79
+1,FENERBAHÇE BEKO,FBB,89,O. Bitim,Onuralp,Bitim,17,0,,1,,,19:14,4,9,44,2,6,33,2,3,66,2,2,100,1,3,4,1,2,0,0,0,3,2,12,3,0,-6,2,O. Bitim,1:89
+1,FENERBAHÇE BEKO,FBB,98,M. Jantunen,Mikael Olli Axel,Jantunen,18,1,,0,,,18:07,2,6,33,0,3,0,2,3,66,2,2,100,3,0,3,1,1,1,0,1,1,3,6,0,0,7,4,M. Jantunen,1:98
+1,FENERBAHÇE BEKO,FBB,95,D. Hall,Devon Howard,Hall,20,1,,0,,,16:53,3,8,37,1,4,25,2,4,50,1,1,100,3,1,4,4,2,1,0,0,1,2,8,6,0,12,4,D. Hall,1:95
+1,FENERBAHÇE BEKO,FBB,91,K. Birch,Khem,Birch,92,0,,0,,,9:21,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,1,0,1,0,0,1,0,0,0,0,0,0,K. Birch,1:91
+2,TÜRK TELEKOM ,TTK,80,M. Devoe,Michael Jaden,Devoe,0,0,,0,,,13:20,1,4,25,0,1,0,1,3,33,1,2,50,0,0,0,3,2,2,0,0,3,3,3,0,2,-7,2,M. Devoe,2:80
+2,TÜRK TELEKOM ,TTK,75,K. Allman,Kyle Lindsay,Allman,1,0,,1,,,26:37,4,10,40,2,3,66,2,7,28,11,12,91,2,0,2,4,0,1,0,1,0,6,21,0,3,4,2,K. Allman,2:75
+2,TÜRK TELEKOM ,TTK,7,B. Durmaz,Berkan,Durmaz,3,0,,0,,,12:29,0,2,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,-6,0,B. Durmaz,2:7
+2,TÜRK TELEKOM ,TTK,6,E. Kosut,Emircan,Kosut,5,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Kosut,2:6
+2,TÜRK TELEKOM ,TTK,3,A. Kahraman,Ata,Kahraman,6,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Kahraman,2:3
+2,TÜRK TELEKOM ,TTK,87,K. Alexander,Kyle John Solomon,Alexander,7,1,,1,,,24:53,5,6,83,0,1,0,5,5,100,3,4,75,2,1,3,2,0,1,1,0,1,3,13,1,2,-11,8,K. Alexander,2:87
+2,TÜRK TELEKOM ,TTK,74,J. Usher,Jordan Emanuel ,Usher,8,1,,0,,,23:05,3,6,50,0,1,0,3,5,60,2,2,100,4,0,4,0,1,1,0,0,1,1,8,0,4,-8,6,J. Usher,2:74
+2,TÜRK TELEKOM ,TTK,77,J. Smith,Jaleen Devon,Smith,9,1,,1,,,20:41,5,10,50,3,6,50,2,4,50,0,0,0,0,0,0,0,3,2,0,0,3,2,13,0,5,-8,2,J. Smith,2:77
+2,TÜRK TELEKOM ,TTK,76,M. Simonovic,Marko,Simonovic,11,1,,0,,,21:23,2,4,50,0,2,0,2,2,100,0,0,0,3,1,4,2,0,1,0,0,3,0,4,2,4,-9,4,M. Simonovic,2:76
+2,TÜRK TELEKOM ,TTK,5,D. Özdemiroglu,Dogus,Özdemiroglu,18,1,1.0,0,,,24:29,3,8,37,1,3,33,2,5,40,4,6,66,1,0,1,5,2,0,0,0,4,5,11,0,0,-12,4,D. Özdemiroglu,2:5
+2,TÜRK TELEKOM ,TTK,8,Y. Gültekin,Yavuz,Gültekin,19,0,,1,,,10:22,1,2,50,0,1,0,1,1,100,0,0,0,0,0,0,1,0,0,0,0,3,0,2,0,2,9,2,Y. Gültekin,2:8
+2,TÜRK TELEKOM ,TTK,78,K. Bankston,Kristeon Lamar,Bankston,30,0,,1,,,22:41,3,4,75,0,0,0,3,4,75,3,4,75,6,1,7,0,1,3,0,1,1,2,9,1,2,8,6,K. Bankston,2:78

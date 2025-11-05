@@ -1,0 +1,22 @@
+{
+  "week": "week01",
+  "game_id": "2714807",
+  "label": "BAHÇESEHIR KOLEJI vs GALATASARAY MCT TECHNIC",
+  "teams": [
+    "BAHÇESEHIR KOLEJI",
+    "GALATASARAY MCT TECHNIC"
+  ],
+  "created_at": "2025-10-28T16:17:07.646982Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/week01/2714807.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

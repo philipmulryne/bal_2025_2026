@@ -1,0 +1,8 @@
+/* Scoped to this app only */
+.alltime-scope .dd-dark .Select-control { background:#0f1424; color:#e8eef9; border-color:#243047; }
+.alltime-scope .dd-dark .Select-placeholder,
+.alltime-scope .dd-dark .Select--single > .Select-control .Select-value,
+.alltime-scope .dd-dark .Select-value-label { color:#e8eef9; }
+.alltime-scope .dd-dark .Select-menu-outer { background:#0f1424; border-color:#243047; }
+.alltime-scope .dd-dark .VirtualizedSelectOption { color:#e8eef9; }
+.alltime-scope .dd-dark .VirtualizedSelectFocusedOption { background:#1a223a; }

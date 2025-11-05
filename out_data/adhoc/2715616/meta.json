@@ -1,0 +1,22 @@
+{
+  "week": "adhoc",
+  "game_id": "2715616",
+  "label": "BURSASPOR BASKETBOL vs BAHÇEŞEHİR KOLEJİ",
+  "teams": [
+    "BURSASPOR BASKETBOL",
+    "BAHÇEŞEHİR KOLEJİ"
+  ],
+  "created_at": "2025-11-03T11:58:08.485663Z",
+  "source_json": "/Users/uygarkaraca/JSON/BSL_2025_26/raw_json/adhoc/2715616.json",
+  "files": {
+    "pbp": "game_pbp_normalized.csv",
+    "pos": "game_possessions.csv",
+    "team_pm": "game_team_pm.csv",
+    "stints": "game_stints.csv",
+    "stints_pm": "game_stints_pm.csv",
+    "matchups": "game_lineup_matchups.csv",
+    "players": "game_players_with_positions.csv",
+    "pos_lookup": "game_player_positions_lookup.csv",
+    "validation": "validation_issues.csv"
+  }
+}

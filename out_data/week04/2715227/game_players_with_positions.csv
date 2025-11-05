@@ -1,0 +1,25 @@
+team_no,team_name,team_code,player_no,name,firstName,familyName,shirtNumber,starter,captain,active,position_raw,position_group,sMinutes,sFieldGoalsMade,sFieldGoalsAttempted,sFieldGoalsPercentage,sThreePointersMade,sThreePointersAttempted,sThreePointersPercentage,sTwoPointersMade,sTwoPointersAttempted,sTwoPointersPercentage,sFreeThrowsMade,sFreeThrowsAttempted,sFreeThrowsPercentage,sReboundsDefensive,sReboundsOffensive,sReboundsTotal,sAssists,sTurnovers,sSteals,sBlocks,sBlocksReceived,sFoulsPersonal,sFoulsOn,sPoints,sPointsSecondChance,sPointsFastBreak,sPlusMinusPoints,sPointsInThePaint,scoreboardName,pair_token
+1,ESENLER EROKSPOR,ERK,26,J. Crawford,Jordon,Crawford,1,1,1.0,1,,,27:13,7,16,43,3,7,42,4,9,44,4,5,80,2,0,2,4,0,1,0,1,3,5,21,3,2,-3,6,J. Crawford,1:26
+1,ESENLER EROKSPOR,ERK,60,K. Pangos,Kevin Joseph,Pangos,4,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,K. Pangos,1:60
+1,ESENLER EROKSPOR,ERK,21,E. Gazi,Erten,Gazi,7,0,,1,,,15:41,1,4,25,0,2,0,1,2,50,1,2,50,2,0,2,0,0,0,0,0,1,3,3,0,0,-1,2,E. Gazi,1:21
+1,ESENLER EROKSPOR,ERK,25,L. Galloway,Langston,Galloway,9,0,,1,,,30:15,4,13,30,1,7,14,3,6,50,4,4,100,3,1,4,1,0,0,0,1,4,2,13,0,3,2,4,L. Galloway,1:25
+1,ESENLER EROKSPOR,ERK,27,J. Simmons,Jeremy,Simmons,11,0,,0,,,15:25,1,1,100,0,0,0,1,1,100,0,0,0,2,1,3,0,1,0,0,0,2,0,2,0,0,-10,2,J. Simmons,1:27
+1,ESENLER EROKSPOR,ERK,24,P. Cornelie,Petr  Willlam,Cornelie,12,1,,1,,,35:35,5,10,50,2,4,50,3,6,50,9,12,75,5,3,8,6,0,0,3,0,3,6,21,0,4,-7,4,P. Cornelie,1:24
+1,ESENLER EROKSPOR,ERK,15,T. Akyazili,Thomas,Akyazili,14,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,T. Akyazili,1:15
+1,ESENLER EROKSPOR,ERK,22,T. Thurman,Tre'shawn,Thurman,15,0,,0,,,22:34,2,6,33,0,4,0,2,2,100,5,6,83,3,0,3,1,1,0,1,0,4,3,9,2,4,11,4,T. Thurman,1:22
+1,ESENLER EROKSPOR,ERK,20,E. Arna,Egehan,Arna,18,1,,1,,,26:06,2,9,22,1,6,16,1,3,33,1,1,100,6,1,7,1,0,1,0,1,2,1,6,3,0,-3,2,E. Arna,1:20
+1,ESENLER EROKSPOR,ERK,28,J. Love,Jermaine,Love,22,1,,0,,,22:32,1,7,14,0,2,0,1,5,20,1,1,100,1,1,2,2,1,1,0,0,3,3,3,0,0,-7,2,J. Love,1:28
+1,ESENLER EROKSPOR,ERK,17,M. Akyel,Metehan,Akyel,41,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,M. Akyel,1:17
+1,ESENLER EROKSPOR,ERK,19,A. Duverioglu,Ahmet,Duverioglu,44,1,,0,,,4:39,1,4,25,0,0,0,1,4,25,0,0,0,1,0,1,1,0,1,0,1,1,0,2,0,0,-2,2,A. Duverioglu,1:19
+2,BESIKTAS GAIN,BJK,70,J. Mathews,Jonah,Mathews,0,1,,1,,,29:33,7,12,58,3,6,50,4,6,66,9,12,75,3,0,3,4,3,1,0,0,3,6,26,2,4,10,2,J. Mathews,2:70
+2,BESIKTAS GAIN,BJK,71,D. Dotson,Devon,Dotson,1,0,,0,,,20:06,3,6,50,1,3,33,2,3,66,3,4,75,6,0,6,4,1,0,0,0,5,3,10,1,3,13,2,D. Dotson,2:71
+2,BESIKTAS GAIN,BJK,72,I. Kamagate,Ismael,Kamagate,4,0,,0,,,14:20,4,8,50,0,0,0,4,8,50,2,2,100,1,4,5,0,0,0,1,0,1,1,10,4,0,2,8,I. Kamagate,2:72
+2,BESIKTAS GAIN,BJK,75,B. Ugurlu,Berk Ibrahim,Ugurlu,6,1,,1,,,24:12,1,2,50,0,0,0,1,2,50,0,0,0,3,0,3,2,1,0,1,0,3,3,2,0,2,-11,2,B. Ugurlu,2:75
+2,BESIKTAS GAIN,BJK,74,Y. Arslan,Yigit,Arslan,7,0,1.0,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Y. Arslan,2:74
+2,BESIKTAS GAIN,BJK,69,C. Morgan,Conor,Morgan,9,1,,0,,,16:34,1,2,50,1,2,50,0,0,0,2,2,100,3,0,3,1,1,0,0,0,5,1,5,0,0,8,0,C. Morgan,2:69
+2,BESIKTAS GAIN,BJK,76,C. Kus,Canberk,Kus,12,0,,1,,,19:39,2,8,25,2,5,40,0,3,0,0,0,0,2,1,3,1,0,0,1,1,2,0,6,0,3,7,0,C. Kus,2:76
+2,BESIKTAS GAIN,BJK,77,A. Özbek,Ahmet Ata,Özbek,13,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,A. Özbek,2:77
+2,BESIKTAS GAIN,BJK,1,E. Adigüzel,Emir,Adigüzel,19,0,,0,,,0:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,E. Adigüzel,2:1
+2,BESIKTAS GAIN,BJK,67,A. Brown,Anthony,Brown,21,1,,1,,,29:08,3,9,33,1,5,20,2,4,50,6,7,85,7,0,7,2,1,0,0,0,1,4,13,0,5,-10,2,A. Brown,2:67
+2,BESIKTAS GAIN,BJK,68,V. Brown,Vittorio,Brown,33,0,,0,,,20:48,0,5,0,0,2,0,0,3,0,2,2,100,5,1,6,0,0,0,0,0,1,2,2,0,0,-1,0,V. Brown,2:68
+2,BESIKTAS GAIN,BJK,62,A. Zizic,Ante Toni,Zizic,41,1,,1,,,25:40,4,8,50,0,0,0,4,8,50,2,2,100,4,3,7,1,2,0,1,3,2,3,10,4,2,2,8,A. Zizic,2:62
