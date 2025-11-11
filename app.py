@@ -73,6 +73,14 @@ NAV = [
         "emoji": "📊",
     },
     {
+        "name": "Possessions",
+        "endpoint": "/possessions/",
+        "module": "dashapps.possessions",
+        "factory": "create_dash_possessions",
+        "desc": "Exact possessions with offensive/defensive/net ratings by team.",
+        "emoji": "⏱️",
+    },
+    {
         "name": "Players",
         "endpoint": "/players/",
         "module": "dashapps.players",
@@ -100,24 +108,49 @@ NAV = [
 # -----------------------------------------------------------------------------
 # Helpers to robustly patch Dash apps whose layout is None (Dash>=2.15)
 # -----------------------------------------------------------------------------
+def _ensure_dash_layout(dash_obj: Any, module_name: str, dash_name: str) -> bool:
+    """Ensure a Dash instance has a layout to avoid NoLayoutException.
+
+    Returns ``True`` when a placeholder layout was attached.
+    """
+
+    try:
+        from dash import Dash, html  # type: ignore
+    except Exception:
+        return False
+
+    if not isinstance(dash_obj, Dash):
+        return False
+
+    layout_value = None
+    try:
+        layout_value = dash_obj._layout_value()  # type: ignore[attr-defined]
+    except Exception:
+        layout_value = getattr(dash_obj, "layout", None)
+
+    if layout_value is None:
+        try:
+            dash_obj.layout = html.Div([
+                html.H3(f"{module_name}.{dash_name} – placeholder layout"),
+                html.P(
+                    "This dashboard did not set a layout during init. "
+                    "Placeholder attached by launcher."
+                ),
+            ])
+            return True
+        except Exception:
+            return False
+
+    return False
+
+
 def _patch_dash_layouts_in_module(mod, module_name: str) -> List[str]:
     patched: List[str] = []
-    try:
-        from dash import Dash, html
-    except Exception:
-        return patched
 
     for name, obj in vars(mod).items():
-        if isinstance(obj, Dash):
-            try:
-                if getattr(obj, "layout", None) is None:
-                    obj.layout = html.Div([
-                        html.H3(f"{module_name}.{name} – placeholder layout"),
-                        html.P("This dashboard did not set a layout during init. Placeholder attached by launcher."),
-                    ])
-                    patched.append(name)
-            except Exception:
-                continue
+        if _ensure_dash_layout(obj, module_name, name):
+            patched.append(name)
+
     return patched
 
 
@@ -143,11 +176,14 @@ def _mount_dash(app: Flask, module_name: str, factory_name: str, endpoint: str) 
                     tried_sigs.append("()")
                     dash_app = factory()
 
-        if dash_app is not None:
+        if dash_app is not None and _ensure_dash_layout(dash_app, module_name, factory_name):
+            # Provide a helpful log so the developer knows to define a layout.
             try:
-                from dash import html
-                if getattr(dash_app, "layout", None) is None:
-                    dash_app.layout = html.Div("Placeholder layout")
+                app.logger.warning(
+                    "Dash app %s.%s mounted with placeholder layout; define app.layout to avoid the fallback.",
+                    module_name,
+                    factory_name,
+                )
             except Exception:
                 pass
 

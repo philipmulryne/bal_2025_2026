@@ -97,25 +97,46 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     out = df.copy()
     # TEAM
-    tcol = _first_col(out, ["team_key", "team", "Team", "scoring_team"])
+    tcol = _first_col(out, [
+        "team_key",
+        "team",
+        "Team",
+        "scoring_team",
+        "team_name",
+        "team_code",
+    ])
     if tcol is None:
         out["TEAM"] = ""
     else:
         out["TEAM"] = out[tcol].astype(str).fillna("")
     # PLAYER
-    pcol = _first_col(out, ["player_key", "player", "Player", "scorer"])
+    pcol = _first_col(out, [
+        "player_key",
+        "player",
+        "Player",
+        "scorer",
+        "scoreboardName",
+        "player_name_from_roster",
+        "firstName",
+    ])
     if pcol is None:
         out["PLAYER"] = ""
     else:
         out["PLAYER"] = out[pcol].astype(str).fillna("")
     # WEEK
     wcol = _first_col(out, ["Week", "week"])
-    out["WEEK"] = out[wcol] if wcol else np.nan
+    if wcol:
+        week_raw = out[wcol].astype(str).fillna("")
+        # Common formats: "week01", "Week 5", "5" → strip non-digits then coerce
+        week_clean = week_raw.str.extract(r"(\d+)", expand=False)
+        out["WEEK"] = pd.to_numeric(week_clean, errors="coerce")
+    else:
+        out["WEEK"] = pd.NA
     # AC
-    acol = _first_col(out, ["ac", "AC", "action_code"])
+    acol = _first_col(out, ["ac", "AC", "action_code", "actionType", "ev_code"])
     out["AC"] = out[acol].astype(str) if acol else ""
     # MADE
-    mcol = _first_col(out, ["made", "is_made", "result"])
+    mcol = _first_col(out, ["made", "is_made", "result", "success", "scoring", "ev_result"])
     if mcol:
         # try to coerce to bool (1/0/True/False/"made"/"miss")
         m = out[mcol]
@@ -124,14 +145,23 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
         else:
             # textual normalize
             ms = m.astype(str).str.lower()
-            out["MADE"] = ms.isin(["1", "true", "t", "made", "success", "scored", "yes"])
+            out["MADE"] = ms.isin([
+                "1",
+                "true",
+                "t",
+                "made",
+                "success",
+                "scored",
+                "yes",
+                "1.0",
+            ])
     else:
         out["MADE"] = pd.NA
     # TEXT
-    txcol = _first_col(out, ["text", "desc", "play", "event_text"])
+    txcol = _first_col(out, ["text", "desc", "play", "event_text", "ev_text"])
     out["TEXT"] = out[txcol].astype(str) if txcol else ""
     # POINTS
-    ptscol = _first_col(out, ["points", "pts", "score_pts"])
+    ptscol = _first_col(out, ["points", "pts", "score_pts", "pts_1", "pts_2"])
     if ptscol:
         out["POINTS"] = pd.to_numeric(out[ptscol], errors="coerce")
     else:
@@ -205,10 +235,94 @@ def _prepare_made_shots(df_raw: pd.DataFrame) -> pd.DataFrame:
 
 
 # =============================================================================
+# Presentation helpers
+# =============================================================================
+
+def _format_mix_rows(pivot: pd.DataFrame, label_col: str, label_fmt=None) -> List[dict]:
+    if pivot is None or pivot.empty:
+        return []
+
+    if label_fmt is None:
+        def label_fmt(x):  # type: ignore
+            return str(x)
+
+    rows: List[dict] = []
+    for _, row in pivot.iterrows():
+        label = label_fmt(row[label_col])
+        m2 = int(row.get("2P", 0))
+        m3 = int(row.get("3P", 0))
+        tot = m2 + m3
+        s2 = f"{(100.0 * m2 / tot):.2f}%" if tot else "0.00%"
+        s3 = f"{(100.0 * m3 / tot):.2f}%" if tot else "0.00%"
+        rows.append({
+            "group": label,
+            "m2": m2,
+            "m3": m3,
+            "tot": tot,
+            "s2": s2,
+            "s3": s3,
+        })
+
+    return rows
+
+
+# =============================================================================
 # Dash app
 # =============================================================================
 
-def _make_layout(app: Dash, has_week: bool, teams: List[str], players: List[str]):
+def _wrap_with_pageshell(app: Dash, base_pathname: str, content):
+    """Attach the shared sidebar shell when available (never returning ``None``).
+
+    ``PageShell`` can resolve to a callable, a module exposing ``page_shell``/``build``,
+    or be missing entirely.  This helper mirrors the hardened usage in other Dash apps
+    so misconfigured imports won't leave the layout unset.
+    """
+
+    if not PageShell:
+        return content
+
+    nav_items = []
+    try:
+        nav_items = list(getattr(app.server, "config", {}).get("NAV", []))
+    except Exception:
+        nav_items = []
+
+    def _attempt(func):
+        try:
+            out = func(content, nav_items, current_endpoint=base_pathname)
+        except TypeError:
+            # Some shells use keyword-only args; retry with keywords.
+            try:
+                out = func(content, nav_items=nav_items, current_endpoint=base_pathname)
+            except Exception:
+                return None
+        except Exception:
+            return html.Div([
+                html.H2("Scoring Frequency"),
+                html.P("Page shell failed; falling back to basic layout."),
+                content,
+            ])
+
+        return out if out is not None else content
+
+    # 1) Direct callable import
+    if callable(PageShell):
+        out = _attempt(PageShell)
+        if out is not None:
+            return out
+
+    # 2) Module/object attributes
+    for attr in ("page_shell", "build"):
+        func = getattr(PageShell, attr, None)
+        if callable(func):
+            out = _attempt(func)
+            if out is not None:
+                return out
+
+    return content
+
+
+def _make_layout(app: Dash, base_pathname: str, has_week: bool, teams: List[str], players: List[str]):
     controls = html.Div([
         html.Div([
             html.Label("Mode"),
@@ -297,9 +411,7 @@ def _make_layout(app: Dash, has_week: bool, teams: List[str], players: List[str]
         ])
     ], className="container mx-auto")
 
-    if PageShell:
-        return PageShell("Scoring Frequency (2P/3P)", inner)
-    return inner
+    return _wrap_with_pageshell(app, base_pathname, inner)
 
 
 def _initial_lists(slim: pd.DataFrame) -> Tuple[List[str], List[str], bool, int, int]:
@@ -322,6 +434,10 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
         suppress_callback_exceptions=True,
     )
 
+    # Dash>=2.15 validates ``layout`` during startup; set a placeholder immediately
+    # so unexpected errors don't leave the layout as ``None``.
+    app.layout = html.Div("Initializing Scoring Frequency…")
+
     raw = _read_pbp()
     slim = _prepare_made_shots(raw)
     teams, players, has_week, wmin, wmax = _initial_lists(slim)
@@ -331,7 +447,7 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
         server.config["SF_WEEK_MIN"] = wmin
         server.config["SF_WEEK_MAX"] = wmax
 
-    app.layout = _make_layout(app, has_week, teams, players)
+    app.layout = _make_layout(app, base_pathname, has_week, teams, players)
 
     # ---------------- Callbacks ----------------
 
@@ -397,20 +513,26 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
                 by_player = df.groupby(["PLAYER", "KIND"], dropna=False).size().reset_index(name="Made")
                 # Pivot to 2P/3P per player
                 pivot = by_player.pivot_table(index="PLAYER", columns="KIND", values="Made", fill_value=0).reset_index()
-                if "2P" not in pivot.columns: pivot["2P"] = 0
-                if "3P" not in pivot.columns: pivot["3P"] = 0
+                if "2P" not in pivot.columns:
+                    pivot["2P"] = 0
+                if "3P" not in pivot.columns:
+                    pivot["3P"] = 0
                 pivot["Total"] = pivot["2P"] + pivot["3P"]
                 pivot = pivot.sort_values("Total", ascending=False).head(12)
                 bar = px.bar(pivot, x="PLAYER", y=["2P", "3P"], barmode="stack", title=f"{group_label}: Top Players by 2P/3P Made")
+                detail_rows = _format_mix_rows(pivot, "PLAYER")
             else:
                 # League-wide per-team bars (top 12)
                 by_team = df.groupby(["TEAM", "KIND"], dropna=False).size().reset_index(name="Made")
                 pivot = by_team.pivot_table(index="TEAM", columns="KIND", values="Made", fill_value=0).reset_index()
-                if "2P" not in pivot.columns: pivot["2P"] = 0
-                if "3P" not in pivot.columns: pivot["3P"] = 0
+                if "2P" not in pivot.columns:
+                    pivot["2P"] = 0
+                if "3P" not in pivot.columns:
+                    pivot["3P"] = 0
                 pivot["Total"] = pivot["2P"] + pivot["3P"]
                 pivot = pivot.sort_values("Total", ascending=False).head(12)
                 bar = px.bar(pivot, x="TEAM", y=["2P", "3P"], barmode="stack", title="League: Top Teams by 2P/3P Made")
+                detail_rows = _format_mix_rows(pivot, "TEAM")
 
             table_data = [{
                 "group": group_label,
@@ -419,7 +541,7 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
                 "tot": tot,
                 "s2": f"{s2:.2f}%",
                 "s3": f"{s3:.2f}%"
-            }]
+            }] + detail_rows
 
             return pie, bar, table_data
 
@@ -445,11 +567,34 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
         # Bar: top players in current scope (team filter applied if chosen)
         by_player = df.groupby(["PLAYER", "KIND"], dropna=False).size().reset_index(name="Made")
         pivot = by_player.pivot_table(index="PLAYER", columns="KIND", values="Made", fill_value=0).reset_index()
-        if "2P" not in pivot.columns: pivot["2P"] = 0
-        if "3P" not in pivot.columns: pivot["3P"] = 0
+        if "2P" not in pivot.columns:
+            pivot["2P"] = 0
+        if "3P" not in pivot.columns:
+            pivot["3P"] = 0
         pivot["Total"] = pivot["2P"] + pivot["3P"]
         pivot = pivot.sort_values("Total", ascending=False).head(12)
         bar = px.bar(pivot, x="PLAYER", y=["2P", "3P"], barmode="stack", title=f"{label}: Top Players by 2P/3P Made")
+
+        if player_val and player_val not in ("(All)", "") and "WEEK" in df.columns and df["WEEK"].notna().any():
+            by_week = df.groupby(["WEEK", "KIND"], dropna=False).size().reset_index(name="Made")
+            pivot_week = by_week.pivot_table(index="WEEK", columns="KIND", values="Made", fill_value=0).reset_index()
+            if "2P" not in pivot_week.columns:
+                pivot_week["2P"] = 0
+            if "3P" not in pivot_week.columns:
+                pivot_week["3P"] = 0
+
+            def _week_label(val):
+                if pd.isna(val):
+                    return "Week ?"
+                try:
+                    ival = int(val)
+                    return f"Week {ival}"
+                except Exception:
+                    return str(val)
+
+            detail_rows = _format_mix_rows(pivot_week.sort_values("WEEK"), "WEEK", _week_label)
+        else:
+            detail_rows = _format_mix_rows(pivot, "PLAYER")
 
         table_data = [{
             "group": label,
@@ -458,7 +603,7 @@ def create_dash_scoring_frequency(server=None, base_pathname: str = "/scoring_fr
             "tot": tot,
             "s2": f"{s2:.2f}%",
             "s3": f"{s3:.2f}%"
-        }]
+        }] + detail_rows
 
         return pie, bar, table_data
 
